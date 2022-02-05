@@ -6,14 +6,15 @@ Name: Connie Huang
 # changelog
 
 ### 2022-02-04
-- ADDED:
+- CREATED:
    - Notes folder
       - moved `changelog.md`
       - created `ref.md`
    - styles and images folder
-   - created `styles.css`
-   - created `about.html`
-   - created `contact.html`
+   - `styles.css`
+   - `about.html` and `contact.html`
+- UPDATED:
+   - added content to `index.html`
 
 
 ### 2022-01-31, added class tutorials

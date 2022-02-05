@@ -1,4 +1,9 @@
 body {
+   background-color: white;
    font-family: monospace;
-   margin: 4em;
+   margin: 5em;
+}
+
+footer {
+   text-align: center;
 }

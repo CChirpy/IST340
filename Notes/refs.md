@@ -14,6 +14,7 @@ A collection of saved links and resources.
 
 ### Practices
 - [Don't use CSS for direction!](https://www.w3.org/International/questions/qa-html-dir#quickanswer)
+- [Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
 ### CSS
 - [Navigation Crumbs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
