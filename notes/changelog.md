@@ -5,6 +5,10 @@ Name: Connie Huang
 
 # changelog
 
+### 2022-02-14
+- REMOVED
+   - extra folder that was appearing on github but not on local machine `git rm -r --cached Notes`
+
 ### 2022-02-13
 - ADDED:
    - svg icons
