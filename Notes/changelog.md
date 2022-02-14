@@ -5,6 +5,30 @@ Name: Connie Huang
 
 # changelog
 
+### 2022-02-13
+- ADDED:
+   - svg icons
+   - drawer button (currently nonfunctional)
+- REMOVED:
+   - `home.css`
+- UPDATED:
+   - `base.css` back to `styles.css`
+   - button appearances
+      - icons, shape, color, shadow
+   - `styles.scss` to use parent selectors
+
+### 2022-02-11
+- CREATED:
+   - redid index.html
+   - installed Sass
+      - `styles.scss`
+- UPDATED:   
+   - reorganized folders
+      - moved md notes outside of website root
+      - moved content from `ref.md` to `README.md`
+      - changed `styles.css` to `base.css`
+      - created `home.css`
+
 ### 2022-02-04
 - CREATED:
    - Notes folder

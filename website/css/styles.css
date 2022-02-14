@@ -1,0 +1,57 @@
+body {
+  font-family: monospace;
+  margin: 2em;
+  background-color: white;
+  color: black; }
+  body a {
+    color: black; }
+
+header {
+  text-align: right; }
+
+footer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%); }
+
+ul li {
+  list-style: none; }
+  ul li a {
+    text-decoration: none; }
+    ul li a:hover {
+      text-decoration: underline; }
+
+button {
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0.65em;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white; }
+  button img {
+    filter: invert(100%); }
+  button:hover {
+    box-shadow: 0 0.4em 1em lightgray; }
+
+.darkmode {
+  background-color: black;
+  color: white; }
+  .darkmode a {
+    color: white; }
+  .darkmode button {
+    background-color: white;
+    color: black; }
+    .darkmode button img {
+      filter: invert(0); }
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%); }
+
+/*# sourceMappingURL=styles.css.map */

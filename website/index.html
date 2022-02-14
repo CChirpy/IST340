@@ -1,0 +1,63 @@
+<!--
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: index.html, Homepage
+   Date Created: 2022-01-28
+   Last Updated: 2022-02-14
+-->
+
+<!-- US English, reads left to right -->
+<html lang="en-us" dir="ltr">
+
+<head>
+   <!-- Title -->
+   <title>connie's notebooks</title>
+   <!-- Character set, viewport -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Revision date -->
+   <meta name="revision" content="2022-02-14">
+   <!-- SEO -->
+   <meta name="author" content="Connie Huang">
+   <meta name="keywords" content="Connie Huang, TCNJ, The College of New Jersey, IST, IMM">
+   <meta name="description" content="Connie's notebooks">
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+   <!-- JS -->
+   <script src="js/darkmode.js"></script>
+   <script src="js/drawer.js"></script>
+
+   <!-- HEADER -->
+   <header>
+      <!-- light/dark mode button -->
+      <button onclick="darkmode()">
+         <div id="modeIcon">
+            <img src="img/sun.svg" alt="sun">
+         </div>
+      </button>
+   </header>
+
+   <!-- NAV -->
+   <nav>
+      <ul>
+         <!-- temporary links -->
+         <li><a href="index.html">Tutoring</a></li>
+         <li><a href="index.html">Contact</a></li>
+      </ul>
+   </nav>
+
+   <!-- CONTENT -->
+   <h1>connie's notebooks</h1>
+
+   <!-- Drawer -->
+   <footer id="myDrawer" class="drawer">
+      <button onclick="openNav()">
+         <div id="navDir">&and;</div>
+      </button>
+   </footer>
+
+</body></html>
