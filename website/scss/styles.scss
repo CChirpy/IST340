@@ -17,16 +17,6 @@ header {
    text-align: right;
 }
 
-// footer
-footer {
-   button {
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%);
-   }
-}
-
 // link styles
 ul li {
    list-style: none;
@@ -40,27 +30,24 @@ ul li {
    }
 }
 
-// buttons
+/* buttons */
 button {
-   // static styles
-   height: 2.5em;
+   height: 2.5em;                     // button size
    width: 2.5em;
-   padding: 0.65em;
-   border-radius: 50%;
+   border-radius: 50%;                // circular buttons
    border: none;
    cursor: pointer;
-
-   // changes on darkmode
-   background-color: black;
-   color: white;
+   z-index: 1;                        // buttons always on top
+   background-color: black;           // changes in .darkmode
+   color: white;                      // changes in .darkmode
 
    &:hover {
-      box-shadow: 0 0.4em 1em lightgray;
+      box-shadow: 0 0.4em 1em grey;   // changes in .darkmode
    }
 
    img {
       width: 1.2em;
-      filter: invert(100%);
+      filter: invert(100%);           // changes in .darkmode
    }
 }
 
@@ -77,20 +64,31 @@ button {
       background-color: white;
       color: black;
 
+      &:hover {
+         box-shadow: 0 0.4em 1em lightgray;
+      }
+
       img {
          filter: invert(0);
       }
    }
 }
 
-// ----- DRAWER -----
-.drawer {
-   height: 0; // changed with JS
+// DRAWER, wip
+#drawer {
    width: 100%;
+   position: absolute;
+   bottom: 0;
+   height: 0;                 // changed with JS
    background-color: black;
 }
 
-// ----- BELOW IS TEMPORARY -----
+#drawerBtn {
+   position: absolute;
+   top: 90%;
+   left: 50%;
+   transform: translate(-50%);
+}
 
 // HOMEPAGE
 h1 {
@@ -100,3 +98,6 @@ h1 {
    left: 50%;
    transform: translate(-50%);
 }
+
+// change webpage when JS isn't working
+// <noscript>

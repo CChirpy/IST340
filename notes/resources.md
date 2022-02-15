@@ -31,3 +31,4 @@ A collection of saved links.
    - [PHP Contact Form](https://codepen.io/badcat/pen/yLYVmqo)
    - [Navigation Crumbs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
    - [HTML Validator Badges](https://tdarb.org/html5-validator-badge/)
+   - [How to hide parts of HTML when JavaScript is disabled?](https://stackoverflow.com/questions/1577598/how-to-hide-parts-of-html-when-javascript-is-disabled)

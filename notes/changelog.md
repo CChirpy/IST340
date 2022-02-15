@@ -1,10 +1,15 @@
 # changelog
 
-### 2022-02-14
-- REMOVED
+### 2022-02-14, wip drawer
+- REMOVED:
    - extra folder that was appearing on github but not on local machine `git rm -r --cached Notes`
+- ADDED:
+   - started working on drawer
+- PLANNED:
+   - add `<noscript>`
+   - add css animations
 
-### 2022-02-13
+### 2022-02-13, better buttons
 - ADDED:
    - svg icons
    - drawer button (currently nonfunctional)
@@ -16,11 +21,12 @@
       - icons, shape, color, shadow
    - `styles.scss` to use parent selectors
 
-### 2022-02-11
+### 2022-02-11, sass + darkmode
 - CREATED:
    - redid index.html
    - installed Sass
       - `styles.scss`
+   - darkmode
 - UPDATED:   
    - reorganized folders
       - moved md notes outside of website root
@@ -28,7 +34,7 @@
       - changed `styles.css` to `base.css`
       - created `home.css`
 
-### 2022-02-04
+### 2022-02-04, setting up + basic html
 - CREATED:
    - Notes folder
       - moved `changelog.md`

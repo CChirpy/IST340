@@ -34,7 +34,7 @@
    <!-- HEADER -->
    <header>
       <!-- light/dark mode button -->
-      <button onclick="darkmode()">
+      <button id="modeBtn" onclick="darkmode()">
          <div id="modeIcon">
             <img src="img/sun.svg" alt="sun">
          </div>
@@ -47,19 +47,28 @@
          <!-- temporary links -->
          <li><a href="index.html">Tutoring</a></li>
          <li><a href="index.html">Contact</a></li>
+         <li><a href="index.html">Notebooks</a></li>
+         <li><a href="index.html">About</a></li>
+         <li><a href="index.html">Feedback</a></li>
       </ul>
    </nav>
 
    <!-- CONTENT -->
    <h1>connie's notebooks</h1>
 
+   <!-- Drawer button -->
+   <button id="drawerBtn" onclick="openDrawer()">
+      <div id="dirIcon">
+         <img src="img/up.svg" alt="up">
+      </div>
+   </button>
+
    <!-- Drawer -->
-   <footer id="myDrawer" class="drawer">
-      <button onclick="openDrawer()">
-         <div id="dirIcon">
-            <img src="img/up.svg" alt="up">
-         </div>
-      </button>
+   <div id="drawer">
+   </div>
+
+   <!-- Hidden FOOTER -->
+   <footer hidden>
    </footer>
 
 </body></html>
