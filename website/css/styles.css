@@ -1,15 +1,17 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: monospace;
-  margin: 2em;
   background-color: white;
   color: black; }
   body a {
     color: black; }
 
 header {
+  padding: 3em 3em 0;
   text-align: right; }
 
-footer {
+footer button {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -31,10 +33,11 @@ button {
   cursor: pointer;
   background-color: black;
   color: white; }
-  button img {
-    filter: invert(100%); }
   button:hover {
     box-shadow: 0 0.4em 1em lightgray; }
+  button img {
+    width: 1.2em;
+    filter: invert(100%); }
 
 .darkmode {
   background-color: black;
@@ -46,6 +49,11 @@ button {
     color: black; }
     .darkmode button img {
       filter: invert(0); }
+
+.drawer {
+  height: 0;
+  width: 100%;
+  background-color: black; }
 
 h1 {
   margin: 0;

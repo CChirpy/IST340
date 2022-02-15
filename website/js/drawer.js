@@ -1,10 +1,10 @@
-function openNav() {
-   var x = document.getElementById("navDir");
-   if (x.innerHTML === "&and;") {
-      x.innerHTML = "&or;";
+function openDrawer() {
+   var x = document.getElementById("dirIcon");
+   if (x.innerHTML === "<img src=\"img/up.svg\" alt=\"up\">") {
+      x.innerHTML = "<img src=\"img/down.svg\" alt=\"down\">";
       document.getElementById("myDrawer").style.height = "250px";
    } else {
-      x.innerHTML = "&and;";
+      x.innerHTML = "<img src=\"img/up.svg\" alt=\"up\">";
       document.getElementById("myDrawer").style.height = "0";
    }
 }

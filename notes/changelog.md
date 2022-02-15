@@ -1,8 +1,3 @@
----
-Name: Connie Huang
-
----
-
 # changelog
 
 ### 2022-02-14
