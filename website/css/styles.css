@@ -1,3 +1,12 @@
+/*
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: Dart Sass 1.49.7
+   File: styles.scss
+   Date Created: 2022-02-11
+   Last Updated: 2022-02-18
+*/
+/* base styles */
 body {
   margin: 0;
   padding: 0;
@@ -7,21 +16,13 @@ body {
   body a {
     color: black; }
 
-ul li {
-  list-style: none; }
-  ul li a {
-    text-decoration: none; }
-    ul li a:hover {
-      text-decoration: underline; }
-
-/* buttons */
+/* buttons default look */
 button {
   height: 2.5em;
   width: 2.5em;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  z-index: 2;
   background-color: black;
   color: white; }
   button:hover {
@@ -30,6 +31,7 @@ button {
     width: 1.2em;
     filter: invert(100%); }
 
+/* darkmode styles */
 .darkmode {
   background-color: black;
   color: white; }
@@ -43,32 +45,77 @@ button {
     .darkmode button img {
       filter: invert(0); }
 
-#modeBtn {
+/* button that switches between light modes */
+#modebtn {
   position: absolute;
   top: 2.5em;
   right: 2.5em; }
 
-#drawerBtn {
+/* open drawer button */
+#openbtn {
   position: absolute;
-  bottom: 2.5em;
   left: 50%;
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  bottom: 2.5em; }
 
+/* styles within drawer */
 #drawer {
+  /* drawer shape and position */
   width: 100%;
-  position: absolute;
   border-radius: 2em 2em 0 0;
+  position: absolute;
   bottom: 0;
+  /* height which drawer opens to, set in JS */
   height: 0;
+  /* color */
+  background-color: black;
+  outline-style: solid;
+  /* appearance */
   z-index: 1;
-  backdrop-filter: blur(10em);
-  background-color: black; }
+  transition: 0.4s;
+  overflow-y: hidden; }
+  #drawer section {
+    /* style of content within drawer */
+    color: white;
+    padding: 3em;
+    height: 80%;
+    overflow: auto; }
+  #drawer #closebtn {
+    /* close button styles */
+    position: absolute;
+    bottom: 25em;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+    transition: 0.3s; }
+    #drawer #closebtn img {
+      filter: invert(100%); }
 
+/* ----------- TEMPORARY / TO BE MOVED ----------- */
+/* link styles */
+ul li {
+  list-style: none; }
+  ul li a {
+    text-decoration: none; }
+    ul li a:hover {
+      text-decoration: underline; }
+
+/* HOMEPAGE */
 h1 {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%); }
+
+/* NAV */
+nav {
+  margin: 2.5em 0 0 0; }
+
+/* TO-DO:
+   - change webpage when JS is disabled
+   - <noscript>
+*/
 
 /*# sourceMappingURL=styles.css.map */

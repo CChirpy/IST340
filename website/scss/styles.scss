@@ -1,4 +1,13 @@
-// default styles
+/*
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: Dart Sass 1.49.7
+   File: styles.scss
+   Date Created: 2022-02-11
+   Last Updated: 2022-02-18
+*/
+
+/* base styles */
 body {
    margin: 0;
    padding: 0;
@@ -11,41 +20,27 @@ body {
    }
 }
 
-// link styles
-ul li {
-   list-style: none;
-
-   a {
-      text-decoration: none;
-
-      &:hover {
-         text-decoration: underline;
-      }
-   }
-}
-
-/* buttons */
+/* buttons default look */
 button {
-   height: 2.5em;                     // button size
+   height: 2.5em; // button size
    width: 2.5em;
-   border-radius: 50%;                // circular buttons
+   border-radius: 50%; // circular buttons
    border: none;
    cursor: pointer;
-   z-index: 2;                        // buttons always on top
-   background-color: black;           // changes in .darkmode
-   color: white;                      // changes in .darkmode
+   background-color: black; // changes in .darkmode
+   color: white; // changes in .darkmode
 
    &:hover {
-      box-shadow: 0 0.4em 1em grey;   // changes in .darkmode
+      box-shadow: 0 0.4em 1em grey; // changes in .darkmode
    }
 
    img {
       width: 1.2em;
-      filter: invert(100%);           // changes in .darkmode
+      filter: invert(100%); // changes in .darkmode
    }
 }
 
-// darkmode styles
+/* darkmode styles */
 .darkmode {
    background-color: black;
    color: white;
@@ -68,32 +63,81 @@ button {
    }
 }
 
-#modeBtn {
+/* button that switches between light modes */
+#modebtn {
    position: absolute;
    top: 2.5em;
    right: 2.5em;
 }
 
-#drawerBtn {
+/* open drawer button */
+#openbtn {
    position: absolute;
-   bottom: 2.5em;
    left: 50%;
    transform: translate(-50%);
+   bottom: 2.5em;
 }
 
-// DRAWER, wip
+/* styles within drawer */
 #drawer {
-   width: 100%;
+   /* drawer shape and position */
+   width: 100%; // width of drawer matches window width
+   border-radius: 2em 2em 0 0; // rounded corners
    position: absolute;
-   border-radius: 2em 2em 0 0;
-   bottom: 0;
-   height: 0;   // changed with JS
-   z-index: 1;
-   backdrop-filter: blur(10em);
+   bottom: 0; // opens from bottom of window
+   
+   /* height which drawer opens to, set in JS */
+   height: 0; // changed in JS
+
+   /* color */
    background-color: black;
+   outline-style: solid;
+
+   /* appearance */
+   z-index: 1; // keeps drawer on top
+   transition: 0.4s; 
+   overflow-y: hidden; // keeps content hidden when closed
+
+   section {
+      /* style of content within drawer */
+      color: white;
+      padding: 3em;
+      height: 80%;
+      overflow: auto;
+   }
+
+   #closebtn {
+      /* close button styles */
+      position: absolute;
+      bottom: 25em;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: rgba(0,0,0,0.3);
+      box-shadow: none;
+      transition: 0.3s;
+
+      img {
+         filter: invert(100%);
+      }
+   }
 }
 
-// HOMEPAGE
+/* ----------- TEMPORARY / TO BE MOVED ----------- */
+
+/* link styles */
+ul li {
+   list-style: none;
+
+   a {
+      text-decoration: none;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+/* HOMEPAGE */
 h1 {
    margin: 0;
    position: absolute;
@@ -102,5 +146,12 @@ h1 {
    transform: translate(-50%);
 }
 
-// change webpage when JS isn't working
-// <noscript>
+/* NAV */
+nav {
+   margin: 2.5em 0 0 0;
+}
+
+/* TO-DO:
+   - change webpage when JS is disabled
+   - <noscript>
+*/

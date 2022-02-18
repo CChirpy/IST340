@@ -1,5 +1,16 @@
 # changelog
 
+### 2022-02-18
+- UPDATED:
+   - drawer is functional now
+      - close button
+      - animation/transition
+      - can contain text
+   - added temporary margin to nav
+- TODO:
+   - create about page
+   - add validator badges and changelog
+
 ### 2022-02-15
 - UPDATED:
    - both drawer and darkmode buttons are in absolute positionx
