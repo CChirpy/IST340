@@ -1,5 +1,9 @@
 # changelog
 
+### 2022-02-15
+- UPDATED:
+   - both drawer and darkmode buttons are in absolute positionx
+
 ### 2022-02-14, wip drawer
 - REMOVED:
    - extra folder that was appearing on github but not on local machine `git rm -r --cached Notes`

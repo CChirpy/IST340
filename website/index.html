@@ -4,7 +4,7 @@
    Version: HTML5, CSS3
    File: index.html, Homepage
    Date Created: 2022-01-28
-   Last Updated: 2022-02-14
+   Last Updated: 2022-02-15
 -->
 
 <!-- US English, reads left to right -->
@@ -17,7 +17,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Revision date -->
-   <meta name="revision" content="2022-02-14">
+   <meta name="revision" content="2022-02-15">
    <!-- SEO -->
    <meta name="author" content="Connie Huang">
    <meta name="keywords" content="Connie Huang, TCNJ, The College of New Jersey, IST, IMM">
@@ -32,15 +32,8 @@
    <script src="js/drawer.js"></script>
 
    <!-- HEADER -->
-   <header>
-      <!-- light/dark mode button -->
-      <button id="modeBtn" onclick="darkmode()">
-         <div id="modeIcon">
-            <img src="img/sun.svg" alt="sun">
-         </div>
-      </button>
-   </header>
-
+   <header hidden></header>
+   
    <!-- NAV -->
    <nav>
       <ul>
@@ -56,6 +49,13 @@
    <!-- CONTENT -->
    <h1>connie's notebooks</h1>
 
+   <!-- light/dark mode button -->
+   <button id="modeBtn" onclick="darkmode()">
+      <div id="modeIcon">
+         <img src="img/sun.svg" alt="sun">
+      </div>
+   </button>
+
    <!-- Drawer button -->
    <button id="drawerBtn" onclick="openDrawer()">
       <div id="dirIcon">
@@ -67,8 +67,7 @@
    <div id="drawer">
    </div>
 
-   <!-- Hidden FOOTER -->
-   <footer hidden>
-   </footer>
+   <!-- FOOTER -->
+   <footer hidden></footer>
 
 </body></html>

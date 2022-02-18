@@ -11,12 +11,6 @@ body {
    }
 }
 
-// header
-header {
-   padding: 3em 3em 0;
-   text-align: right;
-}
-
 // link styles
 ul li {
    list-style: none;
@@ -37,7 +31,7 @@ button {
    border-radius: 50%;                // circular buttons
    border: none;
    cursor: pointer;
-   z-index: 1;                        // buttons always on top
+   z-index: 2;                        // buttons always on top
    background-color: black;           // changes in .darkmode
    color: white;                      // changes in .darkmode
 
@@ -74,20 +68,29 @@ button {
    }
 }
 
-// DRAWER, wip
-#drawer {
-   width: 100%;
+#modeBtn {
    position: absolute;
-   bottom: 0;
-   height: 0;                 // changed with JS
-   background-color: black;
+   top: 2.5em;
+   right: 2.5em;
 }
 
 #drawerBtn {
    position: absolute;
-   top: 90%;
+   bottom: 2.5em;
    left: 50%;
    transform: translate(-50%);
+}
+
+// DRAWER, wip
+#drawer {
+   width: 100%;
+   position: absolute;
+   border-radius: 2em 2em 0 0;
+   bottom: 0;
+   height: 0;   // changed with JS
+   z-index: 1;
+   backdrop-filter: blur(10em);
+   background-color: black;
 }
 
 // HOMEPAGE

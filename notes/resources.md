@@ -27,6 +27,8 @@ A collection of saved links.
    - [Toggle Dark/Light Mode](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp)
    - [How TO - Circles](https://www.w3schools.com/howto/howto_css_circles.asp)
    - [Basic Button Styling](https://www.w3schools.com/css/css3_buttons.asp)
+- Drawer
+   - [Create an Animated Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 - Unused
    - [PHP Contact Form](https://codepen.io/badcat/pen/yLYVmqo)
    - [Navigation Crumbs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
