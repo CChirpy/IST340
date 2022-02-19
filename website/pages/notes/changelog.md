@@ -1,17 +1,23 @@
 # changelog
 
-### 2022-02-18
+### 2022-02-18, drawer finished + started about page
 - UPDATED:
    - drawer is functional now
       - close button
       - animation/transition
       - can contain text
    - added temporary margin to nav
-- TODO:
-   - create about page
-   - add validator badges and changelog
+   - recentered images in buttons
+- ADDED: 
+   - `about.html`
+      - validation icons
+      - sections
+         - About this site, About me
+         - linked changelog and resources
+         - section id styles (temp)
+      - paragraph links has `:visited` color
 
-### 2022-02-15
+### 2022-02-15, another drawer update
 - UPDATED:
    - both drawer and darkmode buttons are in absolute positionx
 

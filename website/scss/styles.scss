@@ -20,8 +20,35 @@ body {
    }
 }
 
+/* nav link styles */
+nav ul li {
+   list-style: none;
+
+   a {
+      text-decoration: none;
+
+      &:hover {
+         text-decoration: underline;
+      }
+
+      &:active {
+         color: grey;
+      }
+   }
+}
+
+/* paragraph link styles */
+p a {
+   text-decoration: underline;
+
+   &:visited {
+      color: blue;
+   }
+}
+
 /* buttons default look */
 button {
+   padding: 0;
    height: 2.5em; // button size
    width: 2.5em;
    border-radius: 50%; // circular buttons
@@ -35,8 +62,12 @@ button {
    }
 
    img {
-      width: 1.2em;
+      width: 1.3em;
       filter: invert(100%); // changes in .darkmode
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
    }
 }
 
@@ -60,6 +91,15 @@ button {
       img {
          filter: invert(0);
       }
+   }
+
+   /* temp */
+   #about-this-site {
+      background-color: darkgoldenrod;
+   }
+
+   #about-me {
+      background-color: palevioletred;
    }
 }
 
@@ -85,9 +125,9 @@ button {
    border-radius: 2em 2em 0 0; // rounded corners
    position: absolute;
    bottom: 0; // opens from bottom of window
-   
+
    /* height which drawer opens to, set in JS */
-   height: 0; // changed in JS
+   height: 0; // CHANGES THRU JS
 
    /* color */
    background-color: black;
@@ -95,15 +135,17 @@ button {
 
    /* appearance */
    z-index: 1; // keeps drawer on top
-   transition: 0.4s; 
+   transition: 0.4s;
    overflow-y: hidden; // keeps content hidden when closed
 
    section {
       /* style of content within drawer */
       color: white;
+
+      /* content placement */
       padding: 3em;
       height: 80%;
-      overflow: auto;
+      overflow: auto; // enables scroll
    }
 
    #closebtn {
@@ -112,7 +154,7 @@ button {
       bottom: 25em;
       left: 50%;
       transform: translate(-50%);
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.3);
       box-shadow: none;
       transition: 0.3s;
 
@@ -122,20 +164,7 @@ button {
    }
 }
 
-/* ----------- TEMPORARY / TO BE MOVED ----------- */
-
-/* link styles */
-ul li {
-   list-style: none;
-
-   a {
-      text-decoration: none;
-
-      &:hover {
-         text-decoration: underline;
-      }
-   }
-}
+/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 
 /* HOMEPAGE */
 h1 {
@@ -149,6 +178,35 @@ h1 {
 /* NAV */
 nav {
    margin: 2.5em 0 0 0;
+}
+
+/* FOOTER */
+footer {
+   padding: 2.5em;
+   text-align: center;
+
+   a {
+      text-decoration: none;
+   }
+
+   img {
+      width: 5.5em;
+   }
+}
+
+/* SECTION */
+section {
+   margin: 2.5em;
+   padding: 2.5em;
+   border-radius: 2.5em;
+}
+
+#about-this-site {
+   background-color: gold;
+}
+
+#about-me {
+   background-color: peachpuff;
 }
 
 /* TO-DO:

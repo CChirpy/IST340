@@ -16,8 +16,25 @@ body {
   body a {
     color: black; }
 
+/* nav link styles */
+nav ul li {
+  list-style: none; }
+  nav ul li a {
+    text-decoration: none; }
+    nav ul li a:hover {
+      text-decoration: underline; }
+    nav ul li a:active {
+      color: grey; }
+
+/* paragraph link styles */
+p a {
+  text-decoration: underline; }
+  p a:visited {
+    color: blue; }
+
 /* buttons default look */
 button {
+  padding: 0;
   height: 2.5em;
   width: 2.5em;
   border-radius: 50%;
@@ -28,13 +45,18 @@ button {
   button:hover {
     box-shadow: 0 0.4em 1em grey; }
   button img {
-    width: 1.2em;
-    filter: invert(100%); }
+    width: 1.3em;
+    filter: invert(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /* darkmode styles */
 .darkmode {
   background-color: black;
-  color: white; }
+  color: white;
+  /* temp */ }
   .darkmode a {
     color: white; }
   .darkmode button {
@@ -44,6 +66,10 @@ button {
       box-shadow: 0 0.4em 1em lightgray; }
     .darkmode button img {
       filter: invert(0); }
+  .darkmode #about-this-site {
+    background-color: darkgoldenrod; }
+  .darkmode #about-me {
+    background-color: palevioletred; }
 
 /* button that switches between light modes */
 #modebtn {
@@ -77,6 +103,7 @@ button {
   #drawer section {
     /* style of content within drawer */
     color: white;
+    /* content placement */
     padding: 3em;
     height: 80%;
     overflow: auto; }
@@ -92,15 +119,7 @@ button {
     #drawer #closebtn img {
       filter: invert(100%); }
 
-/* ----------- TEMPORARY / TO BE MOVED ----------- */
-/* link styles */
-ul li {
-  list-style: none; }
-  ul li a {
-    text-decoration: none; }
-    ul li a:hover {
-      text-decoration: underline; }
-
+/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 /* HOMEPAGE */
 h1 {
   margin: 0;
@@ -112,6 +131,27 @@ h1 {
 /* NAV */
 nav {
   margin: 2.5em 0 0 0; }
+
+/* FOOTER */
+footer {
+  padding: 2.5em;
+  text-align: center; }
+  footer a {
+    text-decoration: none; }
+  footer img {
+    width: 5.5em; }
+
+/* SECTION */
+section {
+  margin: 2.5em;
+  padding: 2.5em;
+  border-radius: 2.5em; }
+
+#about-this-site {
+  background-color: gold; }
+
+#about-me {
+  background-color: peachpuff; }
 
 /* TO-DO:
    - change webpage when JS is disabled
