@@ -21,136 +21,148 @@
      sits inside your www folder.   
 -->
 
-<style>
-/* Base Styles */
-
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-}
-
-body {
-    margin: 0;
-    color: black;
-    font-family: "Times New Roman", Times, serif;
-}
-
-/* General Styles */
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 1em 0;
-}
-
-h2, h3 {
-    margin: 0;
-    padding: 1.3em 0 0 0;
-}
-
-blockquote, p {
-    margin: 0;
-    padding: 1em 1em 0 1em;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-ul li {list-style: none;}
-nav {font-family: Arial, Helvetica, sans-serif;}
-
-/* HEADER */
-header {
-    position: fixed;
-    width: 90%;
-    padding: 2em 3em;
-}
-
-header ul li {
-    display: inline-block;
-    float: right;
-    margin: 0 0 0 1em;
-}
-
-header ul li a {
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
-    background-color: black;
-    color: white;
-    opacity: 60%;
-}
-
-header ul li a:hover {opacity: 100%;}
-
-/* BOOKMARKS */
-aside nav {
-    font-family: "Times New Roman", Times, serif;
-    position: fixed;
-    width: 8em;
-    margin: 3em;
-    padding: 1em;
-    border-radius: 3em;
-    background-color: black;
-    color: white;
-}
-
-aside nav p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-aside nav ul li {
-    padding: 0 0 0.3em 0;
-}
-
-aside nav a:hover {text-decoration: underline}
-
-/* CONSTITUTION */
-article {
-    margin-left: 13em; /* sidebar width */
-    padding: 3em;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 3em;
-    background-color: lightgrey;
-}
-
-img {
-    width: 5em;
-    padding-bottom: 0.5em;
-}
-
-/* NOTE */
-.note {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    width: 8rem;
-    margin: 3rem;
-    padding: 1rem;
-    border-radius: 3rem;
-    background-color: lightgrey;
-    color: black;
-    bottom: 3em;
-    font-size: 11px;
-}
-
-.note p {
-    padding: 1em;
-}
-</style>
-
 <head>
+    <meta charset="UTF-8">
+    
     <!-- TITLE -->
     <title>IST 340 | TCNJ | Constitution of the United States</title>
-    <meta charset="UTF-8">
 
     <!-- BASE REFERENCES -->
     <!-- Because we are using internal links in this assignment, 
          we will leave out all base references and use full links for links in this file. -->
+    <style>
+        /* Base Styles */
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            color: black;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* General Styles */
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 1em 0;
+        }
+
+        h2, h3 {
+            margin: 0;
+            padding: 1.3em 0 0 0;
+        }
+
+        blockquote, p {
+            margin: 0;
+            padding: 1em 1em 0 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            width: 90%;
+            padding: 2em 3em;
+        }
+
+        header ul li {
+            display: inline-block;
+            float: right;
+            margin: 0 0 0 1em;
+        }
+
+        header ul li a {
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            background-color: black;
+            color: white;
+            opacity: 60%;
+        }
+
+        header ul li a:hover {
+            opacity: 100%;
+        }
+
+        /* BOOKMARKS */
+        aside nav {
+            font-family: "Times New Roman", Times, serif;
+            position: fixed;
+            top: 0;
+            width: 8em;
+            margin: 3em;
+            padding: 1em;
+            border-radius: 3em;
+            background-color: black;
+            color: white;
+        }
+
+        aside nav p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        aside nav ul li {
+            padding: 0 0 0.3em 0;
+        }
+
+        aside nav a:hover {
+            text-decoration: underline
+        }
+
+        /* CONSTITUTION */
+        article {
+            margin-left: 13em;
+            /* sidebar width */
+            padding: 3em;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 3em;
+            background-color: lightgrey;
+        }
+
+        img {
+            width: 5em;
+            padding-bottom: 0.5em;
+        }
+
+        /* NOTE */
+        .note {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            width: 8rem;
+            margin: 3rem;
+            padding: 1rem;
+            border-radius: 3rem;
+            bottom: 3em;
+            background-color: lightgrey;
+            color: black;
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .note p {
+            padding: 1em;
+        }
+
+    </style>
 
     <!-- VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -176,39 +188,21 @@ img {
             </ul>
         </nav>
     </header>
-    
+
     <!-- NAVIGATION - PLACE ON LEFT SIDE OF PAGE -->
     <aside>
         <nav>
             <p>Bookmarks</p>
             <ul>
-                <a href="#preamble">
-                    <li>Preamble</li>
-                </a>
-                <a href="#a1">
-                    <li>Article I</li>
-                </a>
-                <a href="#a2">
-                    <li>Article II</li>
-                </a>
-                <a href="#a3">
-                    <li>Article III</li>
-                </a>
-                <a href="#a4">
-                    <li>Article IV</li>
-                </a>
-                <a href="#a5">
-                    <li>Article V</li>
-                </a>
-                <a href="#a6">
-                    <li>Article VI</li>
-                </a>
-                <a href="#a7">
-                    <li>Article VII</li>
-                </a>
-                <a href="#authors">
-                    <li>Authors</li>
-                </a>
+                <li><a href="#preamble">Preamble</a></li>
+                <li><a href="#a1">Article I</a></li>
+                <li><a href="#a2">Article II</a></li>
+                <li><a href="#a3">Article III</a></li>
+                <li><a href="#a4"></a>Article IV</li>
+                <li><a href="#a5">Article V</a></li>
+                <li><a href="#a6">Article VI</a></li>
+                <li><a href="#a7">Article VII</a></li>
+                <li><a href="#authors">Authors</a></li>
             </ul>
         </nav>
     </aside>
@@ -814,18 +808,20 @@ img {
 
     <footer>
         <p>
-            <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Eyouraccount%2Fconstitution.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fpages%2FIST340%2Fassignments%2Fconstitution.html%23top&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank">
+                <img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!">
             </a>
-
+            
             <!--I'm forcing some blank space between images with the following code -->
             &nbsp;&nbsp;&nbsp;&nbsp;
 
-            <a href="http://validator.w3.org/check?uri=https://owd.tcnj.edu/~youraccount/constitution.html">
-                <img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fpages%2FIST340%2Fassignments%2Fconstitution.html%23" target="_blank">
+                <img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/68b012b5c19b26f75d9bee2409420c916b2d451a/html5-validator-badge-blue.svg" alt="Valid HTML!">
             </a>
 
             <br />This code has been validated by W3C.org
         </p>
     </footer>
-</body></html>
+</body>
+
+</html>

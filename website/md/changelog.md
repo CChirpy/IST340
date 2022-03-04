@@ -5,6 +5,7 @@
 - started adding scss modules
 - todo: change font sizes
 - completed constitution css assignment
+- moved notes to `md` folder
 
 ### 2022-03-01, in-class
 - html font size to fix safari display
