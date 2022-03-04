@@ -1,0 +1,32 @@
+/*
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: Dart Sass 1.49.7
+   File: _variables.scss
+   Date Created: 2022-03-04
+   Last Updated: 2022-03-04
+*/
+
+/* colors */
+$black: #000000;
+$dark: #1F1C1C;
+$light: #C9C7C7;
+$white: #FFFFFF;
+
+/* font stacks */
+$font-1: 'Courier Prime', monospace;
+$font-2: 'Inconsolata', monospace;
+
+/* font sizes */
+$fontsize-default: 14px;
+$fontsize-h1: 0;
+$fontsize-h2: 0;
+$fontsize-h3: 0;
+$fontsize-p: 0;
+
+/* spacing */
+$default-spacing: 2.5em;
+
+/* timing */
+$quick: 0.3s;
+$slow: 0.8s;

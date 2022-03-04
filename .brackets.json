@@ -10,7 +10,8 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": true
+            "linting.collapsed": true,
+            "spaceUnits": 3
         }
     }
 }

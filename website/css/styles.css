@@ -4,13 +4,17 @@
    Version: Dart Sass 1.49.7
    File: styles.scss
    Date Created: 2022-02-11
-   Last Updated: 2022-02-18
+   Last Updated: 2022-03-04
 */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata&display=swap");
+html {
+  font-size: 14px; }
+
 /* base styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: monospace;
+  font-family: 'Courier Prime', monospace;
   background-color: white;
   color: black; }
   body a {
@@ -35,17 +39,17 @@ p a {
 /* buttons default look */
 button {
   padding: 0;
-  height: 2.5em;
-  width: 2.5em;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   background-color: black;
   color: white; }
   button:hover {
-    box-shadow: 0 0.4em 1em grey; }
+    box-shadow: 0 0.4rem 1rem grey; }
   button img {
-    width: 1.3em;
+    width: 1.3rem;
     filter: invert(100%);
     position: absolute;
     top: 50%;
@@ -63,7 +67,7 @@ button {
     background-color: white;
     color: black; }
     .darkmode button:hover {
-      box-shadow: 0 0.4em 1em lightgray; }
+      box-shadow: 0 0.4rem 1rem lightgray; }
     .darkmode button img {
       filter: invert(0); }
   .darkmode #about-this-site {
@@ -74,21 +78,21 @@ button {
 /* button that switches between light modes */
 #modebtn {
   position: absolute;
-  top: 2.5em;
-  right: 2.5em; }
+  top: 2.5rem;
+  right: 2.5rem; }
 
 /* open drawer button */
 #openbtn {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 2.5em; }
+  bottom: 2.5rem; }
 
 /* styles within drawer */
 #drawer {
   /* drawer shape and position */
   width: 100%;
-  border-radius: 2em 2em 0 0;
+  border-radius: 2rem 2rem 0 0;
   position: absolute;
   bottom: 0;
   /* height which drawer opens to, set in JS */
@@ -104,13 +108,15 @@ button {
     /* style of content within drawer */
     color: white;
     /* content placement */
-    padding: 3em;
+    padding: 3rem;
     height: 80%;
     overflow: auto; }
+    #drawer section a {
+      color: white; }
   #drawer #closebtn {
     /* close button styles */
     position: absolute;
-    bottom: 25em;
+    bottom: 25rem;
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(0, 0, 0, 0.3);
@@ -121,7 +127,7 @@ button {
 
 /* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 /* HOMEPAGE */
-h1 {
+#intro {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -130,22 +136,25 @@ h1 {
 
 /* NAV */
 nav {
-  margin: 2.5em 0 0 0; }
+  margin: 2.5rem 0 0 0; }
+  nav ul li {
+    display: inline-block;
+    margin: 0 1rem 0 0; }
 
 /* FOOTER */
 footer {
-  padding: 2.5em;
+  padding: 2.5rem;
   text-align: center; }
   footer a {
     text-decoration: none; }
   footer img {
-    width: 5.5em; }
+    width: 5.5rem; }
 
 /* SECTION */
 section {
-  margin: 2.5em;
-  padding: 2.5em;
-  border-radius: 2.5em; }
+  margin: 2.5rem;
+  padding: 2.5rem;
+  border-radius: 2.5rem; }
 
 #about-this-site {
   background-color: gold; }

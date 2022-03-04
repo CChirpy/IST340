@@ -6,86 +6,77 @@
    Version: HTML5, CSS3
    File: index.html
    Date Created: 2022-01-28
-   Last Updated: 2022-02-18
+   Last Updated: 2022-03-04
 -->
 
 <!-- US English, reads left to right -->
 <html lang="en-us" dir="ltr">
 
 <head>
-   <!-- Title -->
-   <title>connie's notebooks</title>
+    <!-- Title -->
+    <title>connie's notebooks</title>
 
-   <!-- Character set, viewport -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Revision date -->
-   <meta name="revision" content="2022-02-18">
-   <!-- SEO -->
-   <meta name="author" content="Connie Huang">
-   <meta name="keywords" content="Connie Huang, TCNJ, The College of New Jersey, IST, IMM">
-   <meta name="description" content="Connie's notebooks">
+    <!-- Character set, viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Revision date -->
+    <meta name="revision" content="2022-03-04">
+    <!-- SEO -->
+    <meta name="author" content="Connie Huang">
+    <meta name="keywords" content="Connie Huang, TCNJ, The College of New Jersey, IST, IMM">
+    <meta name="description" content="Connie's notebooks">
 
-   <!-- Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&display=swap" rel="stylesheet">
-   <!-- CSS -->
-   <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-   <!-- JS -->
-   <script src="js/darkmode.js"></script>
-   <script src="js/drawer.js"></script>
+    <!-- JS -->
+    <script src="js/darkmode.js"></script>
+    <script src="js/drawer.js"></script>
 
-   <!-- HEADER -->
-   <header></header>
+    <!-- HEADER -->
+    <header>
+        <!-- NAV -->
+        <nav>
+            <ul>
+                <!-- temporary links -->
+                <li><a href="index.html">Home</a></li>
+                <!--
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">Notebooks</a></li>
+            -->
+                <li><a href="about.html">About</a></li>
+                <!--<li><a href="index.html">Feedback</a></li>-->
+            </ul>
+        </nav>
 
-   <!-- NAV -->
-   <nav>
-      <ul>
-         <!-- temporary links -->
-         <li><a href="index.html">Home</a></li>
-         <!--
-         <li><a href="index.html">Tutoring</a></li>
-         <li><a href="index.html">Contact</a></li>
-         <li><a href="index.html">Notebooks</a></li>
-         -->
-         <li><a href="about.html">About</a></li>
-         <!--<li><a href="index.html">Feedback</a></li>-->
-      </ul>
-   </nav>
+        <!-- light/dark mode button -->
+        <button id="modebtn" onclick="darkmode()">
+            <span id="modeIcon">
+                <img id="modeicon" src="img/sun.svg" alt="sun">
+            </span>
+        </button>
+    </header>
 
-   <!-- light/dark mode button -->
-   <button id="modebtn" onclick="darkmode()">
-      <span id="modeIcon">
-         <img id="modeicon" src="img/sun.svg" alt="sun">
-      </span>
-   </button>
+    <!-- Drawer button -->
+    <button id="openbtn" onclick="openDrawer()">
+        <img src="img/up.svg" alt="up">
+    </button>
 
-   <!-- Drawer button -->
-   <button id="openbtn" onclick="openDrawer()">
-      <img src="img/up.svg" alt="up">
-   </button>
+    <!-- Drawer -->
+    <div id="drawer">
+        <button id="closebtn" onclick="closeDrawer()"><img src="img/down.svg" alt="down"></button>
+        <section>
+            <h3>links...</h3>
+            <a href="pages/IST340/assignments/constitution.html">constitution</a>
+        </section>
+    </div>
 
-   <!-- Drawer -->
-   <div id="drawer">
-      <button id="closebtn" onclick="closeDrawer()"><img src="img/down.svg" alt="down"></button>
-      <section>
-         <h3>test!</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus aliquet nibh at fermentum. Maecenas ut pretium elit. Vivamus ut bibendum dolor. Morbi fringilla nibh et arcu lacinia, viverra lobortis mi consectetur. Ut eleifend a orci in interdum. Donec molestie, mi eu venenatis venenatis, sapien quam fermentum libero, eu cursus diam lacus id odio. Suspendisse viverra, lacus ac porta congue, metus libero pulvinar ex, et dictum dolor arcu blandit turpis. Sed pharetra tortor vel ligula gravida imperdiet. Fusce quis dapibus neque, et dignissim dui. Vestibulum tempor nunc at erat consequat facilisis. Nullam ultrices auctor quam quis imperdiet. Morbi non est maximus, ornare nisl sit amet, mollis lorem. Pellentesque in ex consequat, blandit eros id, aliquam felis. Nulla nec sagittis ligula.</p>
+    <!-- Content -->
+    <h1 id="intro">connie's notebooks</h1>
 
-         <p>Aenean quis facilisis nisl. Donec ut magna et ipsum iaculis lacinia sed nec ante. Mauris viverra ante congue, commodo nisl sit amet, tempus augue. Fusce pharetra sodales tincidunt. Ut id diam ultrices, lobortis massa eget, volutpat orci. Sed odio lorem, suscipit nec condimentum nec, varius nec eros. Phasellus non sapien at tellus ultricies volutpat. </p>
-
-         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis blandit ultricies sollicitudin. Pellentesque feugiat ex ligula, at mattis nulla aliquet non. Etiam ultrices diam facilisis, blandit lorem ac, mattis turpis. Mauris ac scelerisque ipsum. Integer laoreet vitae nisl ac consectetur. Ut consectetur magna at turpis porta, non molestie velit dignissim. Donec faucibus eros quis ipsum eleifend, non tempus purus molestie. In laoreet, ante ut accumsan luctus, lacus diam bibendum justo, et placerat orci odio non lectus. Vestibulum dignissim, nunc sit amet lobortis fermentum, mi nulla porta neque, quis ultrices justo metus sit amet odio. Nulla facilisi. Nulla cursus, quam vitae faucibus efficitur, leo sem pellentesque metus, eget cursus sem nibh id ligula. Duis condimentum efficitur elit in maximus.</p>
-      </section>
-   </div>
-
-   <!-- Content -->
-   <h1>connie's notebooks</h1>
-
-   <!-- FOOTER -->
-   <footer></footer>
+    <!-- FOOTER -->
+    <footer></footer>
 
 </body></html>
