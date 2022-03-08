@@ -1,5 +1,8 @@
 # changelog
 
+### 2022-03-07, edited css
+- 
+
 ### 2022-03-04, constitution assignment
 - added fonts Courier Prime and Inconsolata
 - started adding scss modules
