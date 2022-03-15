@@ -11,7 +11,8 @@
                 "outputStyle": "nested"
             },
             "linting.collapsed": true,
-            "spaceUnits": 3
+            "spaceUnits": 3,
+            "themes.theme": "rain.monokai-dark-soda"
         }
     }
 }
