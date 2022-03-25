@@ -1,0 +1,107 @@
+/*** File: _typography.scss ***/
+
+/* FONT SIZES + LINE HEIGHT, 
+   inspired by archetypeapp.com */
+$fsize-scale: 1.15;
+$fsize-p: 1.6em;
+$fsize-h6: $fsize-p * $fsize-scale;
+$fsize-h5: $fsize-h6 * $fsize-scale;
+$fsize-h4: $fsize-h5 * $fsize-scale;
+$fsize-h3: $fsize-h4 * $fsize-scale;
+$fsize-h2: $fsize-h3 * $fsize-scale;
+$fsize-h1: $fsize-h2 * $fsize-scale;
+$global-line-height: 2.5rem;
+$text-margin: 1rem;
+
+h1 {
+   font-size: $fsize-h1;
+   line-height: $global-line-height * 2;
+}
+h2 {
+   font-size: $fsize-h2;
+   line-height: $global-line-height * 2;
+}
+h3 {
+   font-size: $fsize-h3;
+   line-height: $global-line-height * 2;
+}
+h4 {
+   font-size: $fsize-h4;
+   line-height: $global-line-height * 2;
+}
+h5 {
+   font-size: $fsize-h5;
+   line-height: $global-line-height;
+}
+h6 {
+   font-size: $fsize-h6;
+   line-height: $global-line-height;
+}
+p {
+   font-size: $fsize-p;
+   line-height: $global-line-height;
+}
+blockquote {
+   font-size: $fsize-p;
+   line-height: $global-line-height;
+}
+
+/* MAIN FONT STYLES */
+$fstack-p: 'Courier Prime', monospace;
+$fstack-h: 'Inconsolata', monospace;
+$p-pad: 1em;
+@mixin text {
+   h1, h2, h3, h4, h5, h6, p, blockquote {
+      @content;
+   }
+}
+@mixin headings {
+   h1, h2, h3, h4, h5, h6 {
+      @content;
+   }
+}
+@include text {
+   font-family: $fstack-p;
+   font-weight: 400;
+}
+@include headings {
+   font-family: $fstack-h;
+   font-weight: 600;
+   margin: $p-pad 0 $p-pad * 0.5;
+}
+
+/* SPECIFIC FONT STYLES */
+p {
+   margin-bottom: $p-pad;
+}
+blockquote {
+   font-style: italic;
+   padding: 1.5em 2em;
+}
+
+/* LISTS */
+@mixin lists {
+   ul li, ol li, dl dt {
+      @content;
+   }
+}
+@include lists {
+   font-size: $fsize-p;
+   line-height: $global-line-height;
+   font-family: $fstack-p;
+   margin-bottom: $p-pad;
+   list-style-position: outside;
+   margin-left: 2em;
+   padding-left: 1em;
+}
+ul li {
+   list-style-type: square;
+}
+ol li {
+   list-style-type: decimal;
+}
+dl dt {
+   list-style-type: none;
+   margin-left: 0;
+   padding: 0;
+}

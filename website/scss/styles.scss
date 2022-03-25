@@ -3,58 +3,70 @@
    Contact: huangc8@tcnj.edu
    Version: Dart Sass 1.49.7
    File: styles.scss
-   Date Created: 2022-02-11
-   Last Updated: 2022-03-04
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata&display=swap');
+@import "partials/base";
+@import "partials/typography";
+@import "partials/color";
+@import "partials/layout";
 
-html {
-   font-size: 14px;
-}
 
-/* base styles */
-body {
-   margin: 0;
-   padding: 0;
 
-   font-family: 'Courier Prime', monospace;
-//   font-family: 'Inconsolata', monospace;
-
-   background-color: white;
-   color: black;
-
-   a {
-      color: black;
-   }
-}
-
-/* nav link styles */
-nav ul li {
-   list-style: none;
-
-   a {
-      text-decoration: none;
-
-      &:hover {
-         text-decoration: underline;
-      }
-
-      &:active {
-         color: grey;
-      }
-   }
-}
-
-/* paragraph link styles */
-p a {
-   text-decoration: underline;
-
-   &:visited {
-      color: blue;
-   }
-}
-
+///*
+//   Author: Connie Huang
+//   Contact: huangc8@tcnj.edu
+//   Version: Dart Sass 1.49.7
+//   File: styles.scss
+//   Date Created: 2022-02-11
+//   Last Updated: 2022-03-04
+//*/
+//
+//html {
+//   font-size: 14px;
+//}
+//
+///* base styles */
+//body {
+//   margin: 0;
+//   padding: 0;
+//
+//   font-family: 'Courier Prime', monospace;
+////   font-family: 'Inconsolata', monospace;
+//
+//   background-color: white;
+//   color: black;
+//
+//   a {
+//      color: black;
+//   }
+//}
+//
+///* nav link styles */
+//nav ul li {
+//   list-style: none;
+//
+//   a {
+//      text-decoration: none;
+//
+//      &:hover {
+//         text-decoration: underline;
+//      }
+//
+//      &:active {
+//         color: grey;
+//      }
+//   }
+//}
+//
+///* paragraph link styles */
+//p a {
+//   text-decoration: underline;
+//
+//   &:visited {
+//      color: blue;
+//   }
+//}
+//
 /* buttons default look */
 button {
    padding: 0;
@@ -79,39 +91,39 @@ button {
       transform: translate(-50%, -50%);
    }
 }
-
-/* darkmode styles */
-.darkmode {
-   background-color: black;
-   color: white;
-
-   a {
-      color: white;
-   }
-
-   button {
-      background-color: white;
-      color: black;
-
-      &:hover {
-         box-shadow: 0 0.4rem 1rem lightgray;
-      }
-
-      img {
-         filter: invert(0);
-      }
-   }
-
-   /* temp */
-   #about-this-site {
-      background-color: darkgoldenrod;
-   }
-
-   #about-me {
-      background-color: palevioletred;
-   }
-}
-
+//
+///* darkmode styles */
+//.darkmode {
+//   background-color: black;
+//   color: white;
+//
+//   a {
+//      color: white;
+//   }
+//
+//   button {
+//      background-color: white;
+//      color: black;
+//
+//      &:hover {
+//         box-shadow: 0 0.4rem 1rem lightgray;
+//      }
+//
+//      img {
+//         filter: invert(0);
+//      }
+//   }
+//
+//   /* temp */
+//   #about-this-site {
+//      background-color: darkgoldenrod;
+//   }
+//
+//   #about-me {
+//      background-color: palevioletred;
+//   }
+//}
+//
 /* button that switches between light modes */
 #modebtn {
    position: absolute;
@@ -126,7 +138,7 @@ button {
    transform: translate(-50%);
    bottom: 2.5rem;
 }
-
+//
 /* styles within drawer */
 #drawer {
    /* drawer shape and position */
@@ -155,6 +167,10 @@ button {
       padding: 3rem;
       height: 80%;
       overflow: auto; // enables scroll
+      
+      h3 {
+         color: white;
+      }
       
       a {
          color: white;
@@ -196,37 +212,38 @@ nav {
       margin: 0 1rem 0 0;
    }
 }
+//
+///* FOOTER */
+//footer {
+//   padding: 2.5rem;
+//   text-align: center;
+//
+//   a {
+//      text-decoration: none;
+//   }
+//
+//   img {
+//      width: 5.5rem;
+//   }
+//}
+//
+///* SECTION */
+//section {
+//   margin: 2.5rem;
+//   padding: 2.5rem;
+//   border-radius: 2.5rem;
+//}
+//
+//#about-this-site {
+//   background-color: gold;
+//}
+//
+//#about-me {
+//   background-color: peachpuff;
+//}
+//
+///* TO-DO:
+//   - change webpage when JS is disabled
+//   - <noscript>
+//*/
 
-/* FOOTER */
-footer {
-   padding: 2.5rem;
-   text-align: center;
-
-   a {
-      text-decoration: none;
-   }
-
-   img {
-      width: 5.5rem;
-   }
-}
-
-/* SECTION */
-section {
-   margin: 2.5rem;
-   padding: 2.5rem;
-   border-radius: 2.5rem;
-}
-
-#about-this-site {
-   background-color: gold;
-}
-
-#about-me {
-   background-color: peachpuff;
-}
-
-/* TO-DO:
-   - change webpage when JS is disabled
-   - <noscript>
-*/

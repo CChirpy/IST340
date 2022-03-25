@@ -1,133 +1,86 @@
-/* Base Styles */
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-}
+/*
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: CSS3
+   File: constitution.scss
+*/
 
-body {
-    margin: 0;
-    color: black;
-    font-family: "Times New Roman", Times, serif;
-}
-
-/* General Styles */
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 1em 0;
-}
-
-h2,
-h3 {
-    margin: 0;
-    padding: 1.3em 0 0 0;
-}
-
-blockquote,
-p {
-    margin: 0;
-    padding: 1em 1em 0 1em;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-ul li {
-    list-style: none;
-}
-
-nav {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* HEADER */
+/* NAV */
 header {
-    position: fixed;
-    width: 90%;
-    padding: 2em 3em;
+   background-color: #f9f9f9;
 }
 
-header ul li {
-    display: inline-block;
-    float: right;
-    margin: 0 0 0 1em;
+header nav {
+   margin: 0;
 }
 
-header ul li a {
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
-    background-color: black;
-    color: white;
-    opacity: 60%;
+header nav ul li {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
 }
 
-header ul li a:hover {
-    opacity: 100%;
+/* Adds / before each list item */
+ul.breadcrumb li + li:before {
+   padding: 8px;
+   color: black;
+   content: "\002F";
 }
 
-/* BOOKMARKS */
-aside nav {
-    font-family: "Times New Roman", Times, serif;
-    position: fixed;
-    top: 0;
-    width: 8em;
-    margin: 3em;
-    padding: 1em;
-    border-radius: 3em;
-    background-color: black;
-    color: white;
+/* Styling */
+ul.breadcrumb li a {
+   color: #0275d8;
+   text-decoration: none;
 }
 
-aside nav p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+ul.breadcrumb li a:hover {
+   color: #01447e;
+   text-decoration: underline;
 }
 
-aside nav ul li {
-    padding: 0 0 0.3em 0;
+/* BUTTON */
+button {
+   /* Position */
+   position: fixed;
+   bottom: 5rem;
+   left: 5rem; 
+   /* Style */ 
+   border-radius: 0.5rem;
 }
 
-aside nav a:hover {
-    text-decoration: underline
+button:hover {
+   background-color: #383838;
+   transition: 0.2s;
+}
+button:active {
+   background-color: #5e5e5e;
 }
 
-/* CONSTITUTION */
-article {
-    margin-left: 13em;
-    /* sidebar width */
-    padding: 3em;
+button a {
+   color: #FFFFFF;
+   text-decoration: none;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 3em;
-    background-color: lightgrey;
+/* MAIN AND ASIDE */
+#flexbox {
+   /* positioning */
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+
+   /* styling */
+   padding: 6vh;
+   overflow: visible;
 }
 
-img {
-    width: 5em;
-    padding-bottom: 0.5em;
-}
+.container aside {
+   /* positioning */
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
 
-/* NOTE */
-.note {
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    width: 8rem;
-    margin: 3rem;
-    padding: 1rem;
-    border-radius: 3rem;
-    bottom: 3em;
-    background-color: lightgrey;
-    color: black;
-    font-size: 11px;
-    font-style: italic;
-}
-
-.note p {
-    padding: 1em;
+   /* styling */
+   padding: 3em;
+   width: 16em;
 }

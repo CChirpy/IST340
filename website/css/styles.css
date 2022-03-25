@@ -3,38 +3,129 @@
    Contact: huangc8@tcnj.edu
    Version: Dart Sass 1.49.7
    File: styles.scss
-   Date Created: 2022-02-11
-   Last Updated: 2022-03-04
 */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata&display=swap");
-html {
-  font-size: 14px; }
-
-/* base styles */
-body {
+/*** File: _base.scss ***/
+/* CLEAR STYLES + SET ROOT */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Courier Prime', monospace;
-  background-color: white;
-  color: black; }
-  body a {
-    color: black; }
-
-/* nav link styles */
-nav ul li {
   list-style: none; }
-  nav ul li a {
-    text-decoration: none; }
-    nav ul li a:hover {
-      text-decoration: underline; }
-    nav ul li a:active {
-      color: grey; }
 
-/* paragraph link styles */
-p a {
-  text-decoration: underline; }
-  p a:visited {
-    color: blue; }
+html {
+  font-size: 10px;
+  scroll-behavior: smooth; }
+
+/*** File: _typography.scss ***/
+/* FONT SIZES + LINE HEIGHT, 
+   inspired by archetypeapp.com */
+h1 {
+  font-size: 3.7009em;
+  line-height: 5rem; }
+
+h2 {
+  font-size: 3.21817em;
+  line-height: 5rem; }
+
+h3 {
+  font-size: 2.79841em;
+  line-height: 5rem; }
+
+h4 {
+  font-size: 2.4334em;
+  line-height: 5rem; }
+
+h5 {
+  font-size: 2.116em;
+  line-height: 2.5rem; }
+
+h6 {
+  font-size: 1.84em;
+  line-height: 2.5rem; }
+
+p {
+  font-size: 1.6em;
+  line-height: 2.5rem; }
+
+blockquote {
+  font-size: 1.6em;
+  line-height: 2.5rem; }
+
+/* MAIN FONT STYLES */
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  margin: 1em 0 0.5em; }
+
+/* SPECIFIC FONT STYLES */
+p {
+  margin-bottom: 1em; }
+
+blockquote {
+  font-style: italic;
+  padding: 1.5em 2em; }
+
+/* LISTS */
+ul li, ol li, dl dt {
+  font-size: 1.6em;
+  line-height: 2.5rem;
+  font-family: "Courier Prime", monospace;
+  margin-bottom: 1em;
+  list-style-position: outside;
+  margin-left: 2em;
+  padding-left: 1em; }
+
+ul li {
+  list-style-type: square; }
+
+ol li {
+  list-style-type: decimal; }
+
+dl dt {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0; }
+
+/*** File: _color.scss ***/
+/* COLOR */
+body {
+  background-color: #FFFFFF; }
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  color: #000000; }
+
+nav a {
+  color: #1d1d1d; }
+  nav a:hover {
+    color: #ff6e6a; }
+
+blockquote {
+  border-left: 0.5rem solid #1d1d1d;
+  background-color: #f9f9f9; }
+
+/*** File: _layout.scss ***/
+/* MAIN */
+main {
+  padding: 8vh;
+  margin: auto; }
+
+/* HEADER */
+header {
+  padding: 8vh;
+  margin: auto; }
+
+/* FOOTER */
+footer {
+  margin: auto;
+  padding: 8vh;
+  text-align: center; }
+  footer p a {
+    text-decoration: none; }
+  footer img {
+    width: 6em; }
 
 /* buttons default look */
 button {
@@ -55,25 +146,6 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-
-/* darkmode styles */
-.darkmode {
-  background-color: black;
-  color: white;
-  /* temp */ }
-  .darkmode a {
-    color: white; }
-  .darkmode button {
-    background-color: white;
-    color: black; }
-    .darkmode button:hover {
-      box-shadow: 0 0.4rem 1rem lightgray; }
-    .darkmode button img {
-      filter: invert(0); }
-  .darkmode #about-this-site {
-    background-color: darkgoldenrod; }
-  .darkmode #about-me {
-    background-color: palevioletred; }
 
 /* button that switches between light modes */
 #modebtn {
@@ -111,6 +183,8 @@ button {
     padding: 3rem;
     height: 80%;
     overflow: auto; }
+    #drawer section h3 {
+      color: white; }
     #drawer section a {
       color: white; }
   #drawer #closebtn {
@@ -140,31 +214,5 @@ nav {
   nav ul li {
     display: inline-block;
     margin: 0 1rem 0 0; }
-
-/* FOOTER */
-footer {
-  padding: 2.5rem;
-  text-align: center; }
-  footer a {
-    text-decoration: none; }
-  footer img {
-    width: 5.5rem; }
-
-/* SECTION */
-section {
-  margin: 2.5rem;
-  padding: 2.5rem;
-  border-radius: 2.5rem; }
-
-#about-this-site {
-  background-color: gold; }
-
-#about-me {
-  background-color: peachpuff; }
-
-/* TO-DO:
-   - change webpage when JS is disabled
-   - <noscript>
-*/
 
 /*# sourceMappingURL=styles.css.map */

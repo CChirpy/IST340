@@ -1,0 +1,33 @@
+/*** File: _color.scss ***/
+
+/* COLOR */
+$black: #000000;
+$dark: #1d1d1d;
+$mid: #bdbdbd;
+$light: #f9f9f9;
+$white: #FFFFFF;
+$pop: #ff6e6a;
+
+body {
+   background-color: $white;
+}
+
+header {
+}
+
+@include text {
+   color: $black;
+}
+
+nav a {
+   color: $dark;
+
+   &:hover {
+      color: $pop;
+   }
+}
+
+blockquote {
+   border-left: 0.5rem solid $dark;
+   background-color: $light;
+}
