@@ -10,7 +10,7 @@
 @import "partials/color";
 @import "partials/layout";
 
-
+/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 
 ///*
 //   Author: Connie Huang
@@ -152,7 +152,7 @@ button {
 
    /* color */
    background-color: black;
-   outline-style: solid;
+//   outline-style: solid;
 
    /* appearance */
    z-index: 1; // keeps drawer on top
@@ -192,8 +192,6 @@ button {
       }
    }
 }
-
-/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 
 /* HOMEPAGE */
 #intro {

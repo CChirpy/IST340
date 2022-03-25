@@ -23,6 +23,7 @@ A collection of saved links.
 - [Don't use CSS for direction!](https://www.w3.org/International/questions/qa-html-dir#quickanswer)
 - [Web Design is 95% Typography](https://ia.net/topics/the-web-is-all-about-typography-period)
 - [Exploring SMACSS](https://www.toptal.com/css/smacss-scalable-modular-architecture-css)
+- [brackets-sass plugin setup](http://harikrishkk.blogspot.com/2016/01/brackets-sass-plugin-setup.html)
 
 ### Reference
 - [CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
@@ -39,9 +40,12 @@ A collection of saved links.
    - [div not allowed as child element of button](https://stackoverflow.com/questions/31020667/div-not-allowed-as-child-element-of-button)
 - Drawer
    - [Create an Animated Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp)
+- Nav
+   - [Navigation Crumbs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
+- Flexbox
+   - [Aligning Three Divs Horizontally Using Flexbox](https://stackoverflow.com/questions/2603700/how-to-align-3-divs-left-center-right-inside-another-div)
 - Unused
    - [PHP Contact Form](https://codepen.io/badcat/pen/yLYVmqo)
-   - [Navigation Crumbs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
    - [How to hide parts of HTML when JavaScript is disabled?](https://stackoverflow.com/questions/1577598/how-to-hide-parts-of-html-when-javascript-is-disabled)
    - [Blur all but one element in the body](https://stackoverflow.com/questions/42827504/blur-all-but-one-element-in-the-body)
    - [Jump menu with active class and smooth scroll](https://codepen.io/eksch/pen/xwdOeK)

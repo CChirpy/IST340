@@ -127,6 +127,7 @@ footer {
   footer img {
     width: 6em; }
 
+/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 /* buttons default look */
 button {
   padding: 0;
@@ -171,7 +172,6 @@ button {
   height: 0;
   /* color */
   background-color: black;
-  outline-style: solid;
   /* appearance */
   z-index: 1;
   transition: 0.4s;
@@ -199,7 +199,6 @@ button {
     #drawer #closebtn img {
       filter: invert(100%); }
 
-/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
 /* HOMEPAGE */
 #intro {
   margin: 0;

@@ -1,11 +1,16 @@
 # changelog
 
 ### 2022-03-25, css overhaul
-- added partials to scss
-   - took most from wip portfolio from spring break
-- redid constitution assignment
-- 6am-12pm
-- Lists, Images, & Positioning assignment
+- ADDED:
+   - partials to scss
+      - took most from wip portfolio from spring break
+   - barebones to `ist340.html`
+- ASSIGNMENTS: 
+   - redid constitution assignment
+   - Lists, Images, & Positioning assignment
+- UPDATES:
+   - moved `md` files again
+   - changed `about.html` links to go to github
 
 ### 2022-03-04, constitution assignment
 - added fonts Courier Prime and Inconsolata

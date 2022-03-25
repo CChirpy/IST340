@@ -39,24 +39,19 @@ ul.breadcrumb li a:hover {
 }
 
 /* BUTTON */
-button {
+.btn {
    /* Position */
    position: fixed;
-   bottom: 5rem;
-   left: 5rem; 
+   bottom: 6rem;
+   left: 9rem; 
    /* Style */ 
    border-radius: 0.5rem;
+   padding: 1em;
+   background-color: black;
+   font-size: 1.3em;
 }
 
-button:hover {
-   background-color: #383838;
-   transition: 0.2s;
-}
-button:active {
-   background-color: #5e5e5e;
-}
-
-button a {
+.btn {
    color: #FFFFFF;
    text-decoration: none;
 }
