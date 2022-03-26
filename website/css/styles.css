@@ -3,8 +3,16 @@
    Contact: huangc8@tcnj.edu
    Version: Dart Sass 1.49.7
    File: styles.scss
+   Date Created: 2022-02-11
+   Purpose: contains main theme and styles of the website
 */
-/*** File: _base.scss ***/
+/* ----------------- DEFAULT STYLES -----------------
+   @import "partials/base";
+   @import "partials/typography";
+   @import "partials/color";
+   @import "partials/layout";
+*/
+/* ---------- File: _base.scss ---------- */
 /* CLEAR STYLES + SET ROOT */
 * {
   margin: 0;
@@ -15,7 +23,7 @@ html {
   font-size: 10px;
   scroll-behavior: smooth; }
 
-/*** File: _typography.scss ***/
+/* ---------- File: _typography.scss ---------- */
 /* FONT SIZES + LINE HEIGHT, 
    inspired by archetypeapp.com */
 h1 {
@@ -89,7 +97,7 @@ dl dt {
   margin-left: 0;
   padding: 0; }
 
-/*** File: _color.scss ***/
+/* ---------- File: _color.scss ---------- */
 /* COLOR */
 body {
   background-color: #FFFFFF; }
@@ -106,7 +114,7 @@ blockquote {
   border-left: 0.5rem solid #1d1d1d;
   background-color: #f9f9f9; }
 
-/*** File: _layout.scss ***/
+/* ---------- File: _layout.scss ---------- */
 /* MAIN */
 main {
   padding: 8vh;
@@ -127,7 +135,7 @@ footer {
   footer img {
     width: 6em; }
 
-/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
+/* ----------- BELOW IS SUBJECT TO CHANGE ----------- */
 /* buttons default look */
 button {
   padding: 0;

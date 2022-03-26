@@ -3,6 +3,15 @@
    Contact: huangc8@tcnj.edu
    Version: Dart Sass 1.49.7
    File: styles.scss
+   Date Created: 2022-02-11
+   Purpose: contains main theme and styles of the website
+*/
+
+/* ----------------- DEFAULT STYLES -----------------
+   @import "partials/base";
+   @import "partials/typography";
+   @import "partials/color";
+   @import "partials/layout";
 */
 
 @import "partials/base";
@@ -10,7 +19,7 @@
 @import "partials/color";
 @import "partials/layout";
 
-/* ----------- TEMPORARY / TO BE MOVED OR CHANGED ----------- */
+/* ----------- BELOW IS SUBJECT TO CHANGE ----------- */
 
 ///*
 //   Author: Connie Huang
@@ -91,6 +100,7 @@ button {
       transform: translate(-50%, -50%);
    }
 }
+
 //
 ///* darkmode styles */
 //.darkmode {
@@ -138,6 +148,7 @@ button {
    transform: translate(-50%);
    bottom: 2.5rem;
 }
+
 //
 /* styles within drawer */
 #drawer {
@@ -152,7 +163,7 @@ button {
 
    /* color */
    background-color: black;
-//   outline-style: solid;
+   //   outline-style: solid;
 
    /* appearance */
    z-index: 1; // keeps drawer on top
@@ -167,11 +178,11 @@ button {
       padding: 3rem;
       height: 80%;
       overflow: auto; // enables scroll
-      
+
       h3 {
          color: white;
       }
-      
+
       a {
          color: white;
       }
@@ -205,11 +216,13 @@ button {
 /* NAV */
 nav {
    margin: 2.5rem 0 0 0;
+
    ul li {
       display: inline-block;
       margin: 0 1rem 0 0;
    }
 }
+
 //
 ///* FOOTER */
 //footer {
@@ -244,4 +257,3 @@ nav {
 //   - change webpage when JS is disabled
 //   - <noscript>
 //*/
-

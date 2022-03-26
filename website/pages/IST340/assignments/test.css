@@ -3,36 +3,35 @@
    Contact: huangc8@tcnj.edu
    Version: CSS3
    File: constitution.scss
+   Date Created: 2022-03-04
+   Purpose: test css for assignments, may implement to main website.
 */
 
-/* NAV */
+/* NAV + HEADER */
 header {
    background-color: #f9f9f9;
 }
-
-header nav {
+nav {
    margin: 0;
 }
-
 header nav ul li {
    display: inline-block;
    margin: 0;
    padding: 0;
 }
 
-/* Adds / before each list item */
+/* Breadcrumb nav, adds slash before each list item */
 ul.breadcrumb li + li:before {
    padding: 8px;
    color: black;
    content: "\002F";
 }
 
-/* Styling */
+/* nav link styling */
 ul.breadcrumb li a {
    color: #0275d8;
    text-decoration: none;
 }
-
 ul.breadcrumb li a:hover {
    color: #01447e;
    text-decoration: underline;
@@ -43,22 +42,21 @@ ul.breadcrumb li a:hover {
    /* Position */
    position: fixed;
    bottom: 6rem;
-   left: 9rem; 
-   /* Style */ 
+   left: 9rem;
+   /* Style */
    border-radius: 0.5rem;
    padding: 1em;
    background-color: black;
    font-size: 1.3em;
 }
-
 .btn {
    color: #FFFFFF;
    text-decoration: none;
 }
 
-/* MAIN AND ASIDE */
+/* MAIN */
 #flexbox {
-   /* positioning */
+   /* flexbox */
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
@@ -69,13 +67,40 @@ ul.breadcrumb li a:hover {
    overflow: visible;
 }
 
+/* ASIDE */
 .container aside {
-   /* positioning */
+   /* STICKY positioning */
    position: -webkit-sticky;
    position: sticky;
    top: 0;
 
-   /* styling */
+   /* styling, border */
    padding: 3em;
-   width: 16em;
+   width: 17em;
+   border-right: 3px solid black; 
+   font-size: 0.8em;
+}
+/* extra class overides for certain cases (two asides, or just one) */
+.container.override aside {
+   border-right: 0 none;
+}
+.container.larger aside {
+   width: 22rem;
+}
+
+/* in-paragraph link styles */
+p a {
+   color: #0275d8;
+   text-decoration: none;
+}
+p a:hover {
+   color: #01447e;
+   text-decoration: underline;
+}
+
+/* float image in main */
+main img {
+   float: right;
+   width: 50%;
+   margin: 0 0 2rem 2rem;
 }

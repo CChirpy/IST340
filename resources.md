@@ -18,6 +18,7 @@ A collection of saved links.
 - [All W3C Validation Icons](https://www.w3.org/QA/Tools/Icons)
 - [W3C Validation Services](https://validator.w3.org/services)
 - [Lorem Ipsum](https://loremipsum.io)
+- [Reference for HTML & CSS Symbols](https://www.toptal.com/designers/htmlarrows/)
 
 ### Articles
 - [Don't use CSS for direction!](https://www.w3.org/International/questions/qa-html-dir#quickanswer)

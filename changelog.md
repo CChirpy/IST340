@@ -6,8 +6,8 @@
       - took most from wip portfolio from spring break
    - barebones to `ist340.html`
 - ASSIGNMENTS: 
-   - redid constitution assignment
-   - Lists, Images, & Positioning assignment
+   - redid `constitution.html` assignment
+   - Lists, Images, & Positioning assignment `recipe.html`
 - UPDATES:
    - moved `md` files again
    - changed `about.html` links to go to github
