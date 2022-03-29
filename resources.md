@@ -30,6 +30,7 @@ A collection of saved links.
 - [CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 - [Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [Ten modern layouts in one line of CSS](https://web.dev/one-line-layouts/)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### Scripts
 - Buttons
