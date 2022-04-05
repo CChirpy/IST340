@@ -43,6 +43,7 @@ ul.breadcrumb li a:hover {
    position: fixed;
    bottom: 6rem;
    left: 9rem;
+    
    /* Style */
    border-radius: 0.5rem;
    padding: 1em;
@@ -80,6 +81,7 @@ ul.breadcrumb li a:hover {
    border-right: 3px solid black; 
    font-size: 0.8em;
 }
+
 /* extra class overides for certain cases (two asides, or just one) */
 .container.override aside {
    border-right: 0 none;
