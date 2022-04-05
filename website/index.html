@@ -1,81 +1,79 @@
 <!DOCTYPE html>
-
 <!--
-   Author: Connie Huang
-   Contact: huangc8@tcnj.edu
-   Version: HTML5, CSS3
-   File: index.html
-   Date Created: 2022-01-28
-   Purpose: homepage of personal tcnj website
+    Author: Connie Huang
+    Contact: huangc8@tcnj.edu
+    Version: HTML5, CSS3
+    File: index.html
+    Date Created: 2022-04-05
+    Purpose: Homepage
 -->
 
-<!-- US English, reads left to right -->
 <html lang="en-us" dir="ltr">
-
+    
 <head>
-    <!-- Title -->
-    <title>connie's notebooks</title>
-
-    <!-- Character set, viewport -->
+    <title>Home | Connie Huang</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Revision date -->
-    <meta name="revision" content="2022-03-04">
+    
+    <!-- REVISION DATE -->
+    <meta name="revision" content="2022-04-05">
+    
     <!-- SEO -->
     <meta name="author" content="Connie Huang">
     <meta name="keywords" content="Connie Huang, TCNJ, The College of New Jersey, IST, IMM">
-    <meta name="description" content="Connie's notebooks">
-    <!-- FONTS -->
+    <meta name="description" content="Connie's personal website!">
+    
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="hhttps://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-
+    
 <body>
-    <!-- JS -->
-    <script src="js/darkmode.js"></script>
-    <script src="js/drawer.js"></script>
-
-    <!-- HEADER -->
     <header>
-        <!-- NAV -->
-        <nav>
-            <ul>
-                <!-- add contact, notebooks, and feedback page-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <!-- LOGO -->
+        <a href="index.html" target="_blank">
+            <img src="img/logo.svg" alt="Home">
+        </a>
 
-        <!-- light/dark mode button -->
-        <button id="modebtn" onclick="darkmode()">
-            <span id="modeIcon">
-                <img id="modeicon" src="img/sun.svg" alt="sun">
-            </span>
-        </button>
+        <!-- NAV -->
+        <nav><ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Notebooks</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="index.html">Contact</a></li>
+        </ul></nav>
     </header>
 
-    <!-- Drawer button -->
-    <button id="openbtn" onclick="openDrawer()">
-        <img src="img/up.svg" alt="up">
-    </button>
+    <main><div class="home">
+        <!-- TITLE -->
+        <h1>Hi, I'm Connie</h1>
+        
+        <!-- SUBTITLE,
+             includes rotating text animation -->
+        <p>I enjoy doing a variety of things,</p>
+        <p class="rotatingText">such as:
+            <span class="adjective">creative coding</span>
+            <span class="adjective">photo &amp; video editing</span>
+            <span class="adjective">3D modeling</span>
+            <span class="adjective">animation</span>
+            <span class="adjective">creating new things</span>
+        </p>
+    </div></main>
 
-    <!-- Drawer -->
-    <div id="drawer">
-        <button id="closebtn" onclick="closeDrawer()"><img src="img/down.svg" alt="down"></button>
-        <section>
-            <h3>links...</h3>
-            <p><a href="pages/IST340/assignments/constitution.html">Constitution</a></p>
-            <p><a href="pages/IST340/assignments/recipe.html">Tiramisu Recipe</a></p>
-        </section>
-    </div>
+    <footer>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank">
+            <img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!">
+        </a>
 
-    <!-- Content -->
-    <h1 id="intro">connie's notebooks</h1>
-
-    <!-- FOOTER -->
-    <footer></footer>
-
-</body></html>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Findex.html" target="_blank">
+            <img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/68b012b5c19b26f75d9bee2409420c916b2d451a/html5-validator-badge-blue.svg" alt="Valid HTML!">
+        </a>
+    </footer>
+</body>
+    
+</html>

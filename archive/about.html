@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: about.html
+   Date Created: 2022-02-18
+   Purpose: about page of personal tcnj website
+-->
+
+<!-- US English, reads left to right -->
+<html lang="en-us" dir="ltr">
+
+<head>
+   <!-- Title -->
+   <title>connie's notebooks</title>
+   <!-- Character set, viewport -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Revision date -->
+   <meta name="revision" content="2022-02-18">
+   <!-- SEO -->
+   <meta name="author" content="Connie Huang">
+   <meta name="keywords" content="Connie Huang, TCNJ, The College of New Jersey, IST, IMM">
+   <meta name="description" content="Connie's notebooks">
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+
+<body>
+   <!-- JS -->
+   <script src="js/darkmode.js"></script>
+
+   <!-- HEADER -->
+   <header>
+      <!-- NAV -->
+      <nav>
+         <ul>
+            <!-- temporary links -->
+            <li><a href="index.html">Home</a></li>
+            <!--
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">Notebooks</a></li>
+            -->
+            <li><a href="about.html">About</a></li>
+            <!--<li><a href="index.html">Feedback</a></li>-->
+         </ul>
+      </nav>
+      <!-- light/dark mode button -->
+      <button id="modebtn" onclick="darkmode()">
+         <span id="modeIcon">
+            <img id="modeicon" src="img/sun.svg" alt="sun">
+         </span>
+      </button>
+   </header>
+
+   <!-- Content -->
+   <main>
+      <section id="about-this-site">
+         <h2>About this site</h2>
+         <p>Hello! This website is still under construction. To see what has changed on this site, check out my <a href="https://github.com/CChirpy/IST340/blob/main/changelog.md" target="_blank">changelog</a>. If you're curious about how I built this site, take a look at my <a href="https://github.com/CChirpy/IST340/blob/main/resources.md" target="_blank">resources list</a>, which is a collection of links I've referred to while building this site. For a better viewing experience, copy and paste the text in the files I've linked into a Markdown editor like <a href="https://dillinger.io" target="_blank">dillinger.io</a>.</p>
+      </section>
+
+      <section id="about-me">
+         <h2>About me</h2>
+         <p>Hi, my name is Connie and I'm a junior Interactive Multimedia (IMM) major at TCNJ with a minor in Information Systems &amp; Technology (IST). My pronouns are she/they. Things I'm currently working on include: developing websites, 3D modeling, animation, and video editing.</p>
+      </section>
+   </main>
+
+
+   <!-- FOOTER -->
+   <footer>
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fabout.html&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank">
+         <img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!">
+      </a>
+
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fabout.html" target="_blank">
+         <img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/68b012b5c19b26f75d9bee2409420c916b2d451a/html5-validator-badge-blue.svg" alt="Valid HTML!">
+      </a>
+   </footer>
+</body>
