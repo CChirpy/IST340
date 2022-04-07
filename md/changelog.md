@@ -1,5 +1,22 @@
 # changelog
 
+### 2022-04-07
+- added `"sortDirectoriesFirst": true` to brackts.json to fix file sort
+    - https://github.com/adobe/brackets/issues/2935#issuecomment-41731307
+- updated `.gitignore`
+
+### 2022-04-05, reorganizing
+- MOVED:
+    - `index.html` and `about.html` to archive folder
+    - `changelog.md` and `resources.md` to md folder
+- CREATED:
+    - `index.html`
+    - `about.html`
+    - `blog.html`
+    - `contact.html`
+    - `notebooks.html`
+    - `work.html`
+
 ### 2022-03-25, css overhaul
 - ADDED:
    - partials to scss
