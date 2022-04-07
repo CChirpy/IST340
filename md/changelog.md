@@ -1,9 +1,14 @@
 # changelog
 
 ### 2022-04-07
-- added `"sortDirectoriesFirst": true` to brackts.json to fix file sort
-    - https://github.com/adobe/brackets/issues/2935#issuecomment-41731307
-- updated `.gitignore`
+- ADDED:
+    - `"sortDirectoriesFirst": true` to brackts.json to fix file sort
+        - https://github.com/adobe/brackets/issues/2935#issuecomment-41731307
+    - 
+- UPDATED 
+    - `.gitignore`, ignore sass mapping
+    - `index.html`
+        - more comments
 
 ### 2022-04-05, reorganizing
 - MOVED:
