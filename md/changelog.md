@@ -2,7 +2,7 @@
 
 ### 2022-04-07
 - ADDED:
-    - `"sortDirectoriesFirst": true` to brackts.json to fix file sort
+    - `"sortDirectoriesFirst": true` to brackets.json to fix file sort
         - https://github.com/adobe/brackets/issues/2935#issuecomment-41731307
     - 
 - UPDATED 
