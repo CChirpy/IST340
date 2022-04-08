@@ -1,18 +1,23 @@
 {
     "sass.enabled": false,
-    "sass.compiler": "libsass",
+    "sass.options": {
+        "includePaths": [
+            "website/scss/"
+        ],
+        "outputDir": "../css/",
+        "imagePath": null,
+        "sourceComments": false,
+        "outputStyle": "nested"
+    },
+    "linting.collapsed": false,
+    "spaceUnits": 3,
     "path": {
         "website/scss/styles.scss": {
-            "sass.enabled": true,
-            "sass.options": {
-                "outputDir": "../css/",
-                "imagePath": null,
-                "sourceComments": false,
-                "outputStyle": "nested"
-            },
-            "linting.collapsed": true,
-            "spaceUnits": 3,
-            "themes.theme": "rain.monokai-dark-soda"
+            "sass.enabled": true   
+        },
+
+        "website/scss/layout.scss": {
+            "sass.enabled": true
         }
     }
 }

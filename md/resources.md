@@ -32,6 +32,9 @@ A collection of saved links.
 - [Ten modern layouts in one line of CSS](https://web.dev/one-line-layouts/)
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+### Questions
+- [Using SASS partials in Brackets](https://stackoverflow.com/questions/28271061/using-sass-partials-in-brackets)
+
 ### Scripts
 - Buttons
    - [Toggle Text](https://www.w3schools.com/howto/howto_js_toggle_text.asp)

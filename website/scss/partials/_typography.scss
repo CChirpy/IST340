@@ -15,34 +15,33 @@ $text-margin: 1rem;
 
 h1 {
    font-size: $fsize-h1;
-   line-height: $global-line-height * 2;
 }
 h2 {
    font-size: $fsize-h2;
-   line-height: $global-line-height * 2;
 }
 h3 {
    font-size: $fsize-h3;
-   line-height: $global-line-height * 2;
 }
 h4 {
    font-size: $fsize-h4;
-   line-height: $global-line-height * 2;
 }
 h5 {
    font-size: $fsize-h5;
-   line-height: $global-line-height;
 }
 h6 {
    font-size: $fsize-h6;
-   line-height: $global-line-height;
 }
 p {
    font-size: $fsize-p;
-   line-height: $global-line-height;
 }
 blockquote {
    font-size: $fsize-p;
+}
+
+h1, h2, h3, h4 {
+   line-height: $global-line-height * 2;
+}
+h5, h6, p, blockquote {
    line-height: $global-line-height;
 }
 
@@ -50,6 +49,7 @@ blockquote {
 $fstack-p: 'Courier Prime', monospace;
 $fstack-h: 'Inconsolata', monospace;
 $p-pad: 1em;
+
 @mixin text {
    h1, h2, h3, h4, h5, h6, p, blockquote {
       @content;
@@ -60,6 +60,7 @@ $p-pad: 1em;
       @content;
    }
 }
+
 @include text {
    font-family: $fstack-p;
    font-weight: 400;
@@ -85,6 +86,7 @@ blockquote {
       @content;
    }
 }
+
 @include lists {
    font-size: $fsize-p;
    line-height: $global-line-height;

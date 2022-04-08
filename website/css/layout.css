@@ -1,0 +1,23 @@
+/* MAIN */
+main {
+  padding: 8vh;
+  margin: auto; }
+
+/* HEADER */
+header {
+  padding: 8vh;
+  margin: auto; }
+
+/* FOOTER */
+footer {
+  margin: auto;
+  padding: 8vh;
+  text-align: center; }
+  footer p a {
+    text-decoration: none; }
+  footer img {
+    width: 6em; }
+
+/* Test */
+
+/*# sourceMappingURL=layout.css.map */
