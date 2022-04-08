@@ -1,258 +1,46 @@
-/*
+/* 
+   ------------------------
+    ! UNDER CONSTRUCTION !
+   Last Updated: 2022-04-08
+   ------------------------
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
-   Version: Dart Sass 1.49.7
+   Version: Dart Sass 1.49.7, CSS3
    File: styles.scss
-   Date Created: 2022-02-11
-   Purpose: contains main theme and styles of the website
+   Date Created: 2022-04-08
+   Purpose: Base styles/theme of the website
 */
 
-/* ----------------- DEFAULT STYLES -----------------
-   @import "partials/base";
-   @import "partials/typography";
-   @import "partials/color";
-   @import "partials/layout";
-*/
+/* --------------------------------------------------- */
 
+/* 
+   partials/_variables.scss/
+   Scss variables used throughout the code. 
+*/
+@import "partials/variables";
+
+/* --------------------------------------------------- */
+
+/* 
+   partials/_base.scss/
+   Resets spacing and font-size from browser defaults. 
+*/
 @import "partials/base";
-@import "partials/typography";
+
+/* --------------------------------------------------- */
+
+/*
+   partials/_color.scss/
+   Sets all the colors of the website.
+*/
 @import "partials/color";
 
-/* ----------- BELOW IS SUBJECT TO CHANGE ----------- */
+/* --------------------------------------------------- */
 
-///*
-//   Author: Connie Huang
-//   Contact: huangc8@tcnj.edu
-//   Version: Dart Sass 1.49.7
-//   File: styles.scss
-//   Date Created: 2022-02-11
-//   Last Updated: 2022-03-04
-//*/
-//
-//html {
-//   font-size: 14px;
-//}
-//
-///* base styles */
-//body {
-//   margin: 0;
-//   padding: 0;
-//
-//   font-family: 'Courier Prime', monospace;
-////   font-family: 'Inconsolata', monospace;
-//
-//   background-color: white;
-//   color: black;
-//
-//   a {
-//      color: black;
-//   }
-//}
-//
-///* nav link styles */
-//nav ul li {
-//   list-style: none;
-//
-//   a {
-//      text-decoration: none;
-//
-//      &:hover {
-//         text-decoration: underline;
-//      }
-//
-//      &:active {
-//         color: grey;
-//      }
-//   }
-//}
-//
-///* paragraph link styles */
-//p a {
-//   text-decoration: underline;
-//
-//   &:visited {
-//      color: blue;
-//   }
-//}
-//
-/* buttons default look */
-button {
-   padding: 0;
-   height: 2.5rem; // button size
-   width: 2.5rem;
-   border-radius: 50%; // circular buttons
-   border: none;
-   cursor: pointer;
-   background-color: black; // changes in .darkmode
-   color: white; // changes in .darkmode
+/* 
+   partials/_typography.scss/
+   Sets font-size and font-family.
+*/
+@import "partials/typography";
 
-   &:hover {
-      box-shadow: 0 0.4rem 1rem grey; // changes in .darkmode
-   }
-
-   img {
-      width: 1.3rem;
-      filter: invert(100%); // changes in .darkmode
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-   }
-}
-
-//
-///* darkmode styles */
-//.darkmode {
-//   background-color: black;
-//   color: white;
-//
-//   a {
-//      color: white;
-//   }
-//
-//   button {
-//      background-color: white;
-//      color: black;
-//
-//      &:hover {
-//         box-shadow: 0 0.4rem 1rem lightgray;
-//      }
-//
-//      img {
-//         filter: invert(0);
-//      }
-//   }
-//
-//   /* temp */
-//   #about-this-site {
-//      background-color: darkgoldenrod;
-//   }
-//
-//   #about-me {
-//      background-color: palevioletred;
-//   }
-//}
-//
-/* button that switches between light modes */
-#modebtn {
-   position: absolute;
-   top: 2.5rem;
-   right: 2.5rem;
-}
-
-/* open drawer button */
-#openbtn {
-   position: absolute;
-   left: 50%;
-   transform: translate(-50%);
-   bottom: 2.5rem;
-}
-
-//
-/* styles within drawer */
-#drawer {
-   /* drawer shape and position */
-   width: 100%; // width of drawer matches window width
-   border-radius: 2rem 2rem 0 0; // rounded corners
-   position: absolute;
-   bottom: 0; // opens from bottom of window
-
-   /* height which drawer opens to, set in JS */
-   height: 0; // CHANGES THRU JS
-
-   /* color */
-   background-color: black;
-   //   outline-style: solid;
-
-   /* appearance */
-   z-index: 1; // keeps drawer on top
-   transition: 0.4s;
-   overflow-y: hidden; // keeps content hidden when closed
-
-   section {
-      /* style of content within drawer */
-      color: white;
-
-      /* content placement */
-      padding: 3rem;
-      height: 80%;
-      overflow: auto; // enables scroll
-
-      h3 {
-         color: white;
-      }
-
-      a {
-         color: white;
-      }
-   }
-
-   #closebtn {
-      /* close button styles */
-      position: absolute;
-      bottom: 25rem;
-      left: 50%;
-      transform: translate(-50%);
-      background-color: rgba(0, 0, 0, 0.3);
-      box-shadow: none;
-      transition: 0.3s;
-
-      img {
-         filter: invert(100%);
-      }
-   }
-}
-
-/* HOMEPAGE */
-#intro {
-   margin: 0;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%);
-}
-
-/* NAV */
-nav {
-   margin: 2.5rem 0 0 0;
-
-   ul li {
-      display: inline-block;
-      margin: 0 1rem 0 0;
-   }
-}
-
-//
-///* FOOTER */
-//footer {
-//   padding: 2.5rem;
-//   text-align: center;
-//
-//   a {
-//      text-decoration: none;
-//   }
-//
-//   img {
-//      width: 5.5rem;
-//   }
-//}
-//
-///* SECTION */
-//section {
-//   margin: 2.5rem;
-//   padding: 2.5rem;
-//   border-radius: 2.5rem;
-//}
-//
-//#about-this-site {
-//   background-color: gold;
-//}
-//
-//#about-me {
-//   background-color: peachpuff;
-//}
-//
-///* TO-DO:
-//   - change webpage when JS is disabled
-//   - <noscript>
-//*/
+/* --------------------------------------------------- */

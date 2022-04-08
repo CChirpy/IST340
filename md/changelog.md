@@ -1,6 +1,14 @@
 # changelog
 
-### 2022-04-07
+### 2022-04-08, new code + media queries
+"better comments, moved around files and folders, redoing lots of code"
+- ADDED:
+   - `_variable.scss`
+- UPDATED:
+   - homepage description
+   - redoing stylesheets, kept some of the typography
+
+### 2022-04-07, reorganizing
 - ADDED:
    - `"sortDirectoriesFirst": true` to brackets.json to fix file sort
       - https://github.com/adobe/brackets/issues/2935#issuecomment-41731307
@@ -10,6 +18,7 @@
    - `index.html`
       - more comments
    - `.brackets.json` to add more scss files
+   - reduced redundancy in typography code
 
 ### 2022-04-05, reorganizing
 - MOVED:
