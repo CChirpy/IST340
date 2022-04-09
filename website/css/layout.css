@@ -1,23 +1,49 @@
-/* MAIN */
-main {
-  padding: 8vh;
-  margin: auto; }
+/* 
+   ------------------------
+    ! UNDER CONSTRUCTION !
+   Last Updated: 2022-04-08
+   ------------------------
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: Dart Sass 1.49.7, CSS3
+   File: layout.scss
+   Date Created: 2022-04-08
+   Purpose: Base layout for webpages.
+*/
+/* -------------------------------------------------------------------- */
+/* 
+   Adds padding to all main sections of the page
+   instead of adding padding directly to the body
+   to prevent problem of having blank border around page
+   when applying colors to sections 
+*/
+body > * {
+  padding: 4em; }
 
-/* HEADER */
-header {
-  padding: 8vh;
-  margin: auto; }
+/* -------------------------------------------------------------------- */
+/* 
+   HEADER
+   https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp
+*/
+header nav {
+  text-align: right; }
+  header nav ul {
+    overflow: auto;
+    white-space: nowrap; }
+    header nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding-left: 2em; }
 
-/* FOOTER */
-footer {
-  margin: auto;
-  padding: 8vh;
-  text-align: center; }
-  footer p a {
-    text-decoration: none; }
-  footer img {
-    width: 6em; }
-
-/* Test */
+/* -------------------------------------------------------------------- */
+/*
+   MAIN
+*/
+/* -------------------------------------------------------------------- */
+/*
+   FOOTER
+*/
+/* -------------------------------------------------------------------- */
 
 /*# sourceMappingURL=layout.css.map */

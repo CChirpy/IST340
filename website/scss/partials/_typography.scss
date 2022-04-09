@@ -16,33 +16,23 @@ h5 {
 h6 {
    font-size: $fsize-h6;
 }
-p {
-   font-size: $fsize-p;
-}
-blockquote {
+p, blockquote, 
+ul li, ol li, dl dt, dl dd {
    font-size: $fsize-p;
 }
 
-@include text {
-   font-family: $fontstack-1;
-   font-weight: 300;
-   line-height: 1.5;
-}
 @include headings {
-   font-family: $fontstack-1;
    font-weight: 400;
 }
 
 @include lists {
-   font-size: $fsize-p;
-   font-family: $fontstack-1;
+   list-style: square outside;
+   margin-left: 1.75em;
+   padding-left: 0.5em;
 }
-ul li {
-   list-style-type: square;
-}
-ol li {
-   list-style-type: decimal;
-}
-dl dt {
-   list-style-type: none;
+
+blockquote {
+   font-style: italic;
+   border-left: 0.25em solid;
+   padding: 1em 2em;
 }

@@ -1,12 +1,22 @@
 # changelog
 
 ### 2022-04-08, new code + media queries
-"better comments, moved around files and folders, redoing lots of code"
+- Comments:
+   - moved around files and folders
+   - redoing lots of code, 
+   - small change in workflow
+      - better comments
+      - tab size 5 for html
+      - 3 space for css
 - ADDED:
    - `_variable.scss`
 - UPDATED:
    - homepage description
    - redoing stylesheets, kept some of the typography
+      - removed redundant code, default font styles in `_base.scss`
+   - reimported `constitution.html`
+   - cleaned up `styles.scss` to be more minimal
+   - added code to `layout.scss`
 
 ### 2022-04-07, reorganizing
 - ADDED:

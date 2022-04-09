@@ -8,17 +8,17 @@
    Version: Dart Sass 1.49.7, CSS3
    File: styles.scss
    Date Created: 2022-04-08
-   Purpose: Base styles/theme of the website
+   Purpose: Base styles/theme of the website.
 */
 /* --------------------------------------------------- */
 /* 
    partials/_variables.scss/
-   Scss variables used throughout the code. 
+   Scss variables used throughout the styles.scss 
 */
 /* --------------------------------------------------- */
 /* 
    partials/_base.scss/
-   Resets spacing and font-size from browser defaults. 
+   Resets spacing and font-size from browser defaults.
 */
 * {
   margin: 0;
@@ -29,29 +29,18 @@ html {
 
 /* --------------------------------------------------- */
 /*
-   partials/_color.scss/
-   Sets all the colors of the website.
+   partials/_default.scss/
+   Sets the default styles of the website.
 */
 body {
-  background-color: #FFFFFF; }
-
-h1, h2, h3, h4, h5, h6,
-p, blockquote {
-  color: #000000; }
-
-nav a {
-  color: #1d1d1d; }
-  nav a:hover {
-    color: #ff6e6a; }
-
-blockquote {
-  border-left: 0.5rem solid #1d1d1d;
-  background-color: #f9f9f9; }
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 2;
+  font-weight: 300; }
 
 /* --------------------------------------------------- */
 /* 
    partials/_typography.scss/
-   Sets font-size and font-family.
+   Sets all styles related to typography (font, color).
 */
 h1 {
   font-size: 3.7009em; }
@@ -71,34 +60,22 @@ h5 {
 h6 {
   font-size: 1.84em; }
 
-p {
+p, blockquote,
+ul li, ol li, dl dt, dl dd {
   font-size: 1.6em; }
-
-blockquote {
-  font-size: 1.6em; }
-
-h1, h2, h3, h4, h5, h6,
-p, blockquote {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
-  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
-ul li, ol li, dl dt {
-  font-size: 1.6em;
-  font-family: "Josefin Sans", sans-serif; }
+ul li, ol li, dl dt, dl dd {
+  list-style: square outside;
+  margin-left: 1.75em;
+  padding-left: 0.5em; }
 
-ul li {
-  list-style-type: square; }
-
-ol li {
-  list-style-type: decimal; }
-
-dl dt {
-  list-style-type: none; }
+blockquote {
+  font-style: italic;
+  border-left: 0.25em solid;
+  padding: 1em 2em; }
 
 /* --------------------------------------------------- */
 

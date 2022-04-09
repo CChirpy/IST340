@@ -1,12 +1,9 @@
 // color
-$black: #000000;
 $dark: #1d1d1d;
-$mid: #bdbdbd;
 $light: #f9f9f9;
-$white: #FFFFFF;
-$pop: #ff6e6a;
 
-// font-size + line-height
+// font-size
+// inspired by https://archetypeapp.com/#
 $fsize-scale: 1.15;
 $fsize-p: 1.6em;
 $fsize-h6: $fsize-p * $fsize-scale;
@@ -15,29 +12,23 @@ $fsize-h4: $fsize-h5 * $fsize-scale;
 $fsize-h3: $fsize-h4 * $fsize-scale;
 $fsize-h2: $fsize-h3 * $fsize-scale;
 $fsize-h1: $fsize-h2 * $fsize-scale;
-$global-line-height: 2.5rem;
 $text-margin: 1rem;
 
 // fontstacks
 $fontstack-1: 'Josefin Sans', sans-serif;
 
 // --- TO USE MIXINS: @include name ---
-// selects all text
-@mixin text {
-   h1, h2, h3, h4, h5, h6,
-   p, blockquote {
-      @content;
-   }
-}
+
 // selects every heading
 @mixin headings {
    h1, h2, h3, h4, h5, h6 {
       @content;
    }
 }
+
 // selects every lists
 @mixin lists {
-   ul li, ol li, dl dt {
+   ul li, ol li, dl dt, dl dd {
       @content;
    }
 }

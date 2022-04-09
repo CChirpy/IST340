@@ -9,16 +9,20 @@
         "sourceComments": false,
         "outputStyle": "nested"
     },
-    "linting.collapsed": false,
+    "linting.collapsed": true,
     "spaceUnits": 3,
     "path": {
         "website/scss/styles.scss": {
             "sass.enabled": true,
             "useTabChar": false,
-            "spaceUnits": 3
+            "spaceUnits": 3,
+            "linting.collapsed": false
         },
         "website/scss/layout.scss": {
-            "sass.enabled": true
+            "sass.enabled": true,
+            "useTabChar": false,
+            "spaceUnits": 3,
+            "linting.collapsed": false
         }
     }
 }

@@ -8,14 +8,14 @@
    Version: Dart Sass 1.49.7, CSS3
    File: styles.scss
    Date Created: 2022-04-08
-   Purpose: Base styles/theme of the website
+   Purpose: Base styles/theme of the website.
 */
 
 /* --------------------------------------------------- */
 
 /* 
    partials/_variables.scss/
-   Scss variables used throughout the code. 
+   Scss variables used throughout the styles.scss 
 */
 @import "partials/variables";
 
@@ -23,23 +23,23 @@
 
 /* 
    partials/_base.scss/
-   Resets spacing and font-size from browser defaults. 
+   Resets spacing and font-size from browser defaults.
 */
 @import "partials/base";
 
 /* --------------------------------------------------- */
 
 /*
-   partials/_color.scss/
-   Sets all the colors of the website.
+   partials/_default.scss/
+   Sets the default styles of the website.
 */
-@import "partials/color";
+@import "partials/default";
 
 /* --------------------------------------------------- */
 
 /* 
    partials/_typography.scss/
-   Sets font-size and font-family.
+   Sets all styles related to typography (font, color).
 */
 @import "partials/typography";
 
