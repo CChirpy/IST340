@@ -10,25 +10,38 @@
    Date Created: 2022-04-08
    Purpose: Base layout for webpages.
 */
-/* -------------------------------------------------------------------- */
+/* --------------------------------------------------- */
 
 /* 
-   Adds padding to all main sections of the page
+   General 
+*/
+
+/* Adds padding to all main sections of the page
    instead of adding padding directly to the body
    to prevent problem of having blank border around page
-   when applying colors to sections 
-*/
+   when applying colors to sections */
 body > * {
    padding: 4em;
 }
 
-/* -------------------------------------------------------------------- */
+/* Main stretches to fill full height of the page:
+   https://stackoverflow.com/questions/17054158/ */
+body { 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+
+/* --------------------------------------------------- */
 /* 
-   HEADER
+   HEADER NAV
    https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp
 */
 header {
-//   background-color: yellow;     // test, visualize padding
+   background-color: yellow; // test, visualize padding
 
    nav {
       text-align: right;
@@ -41,28 +54,28 @@ header {
             display: inline-block;
             list-style-type: none;
             margin: 0;
-            padding-left: 2em;
+            padding: 1em 0 1em 2em;
          }
       }
    }
 }
 
-/* -------------------------------------------------------------------- */
+/* --------------------------------------------------- */
 
 /*
    MAIN
 */
 main {
-//   background-color: orange;     // test, visualize padding
+   background-color: orange; // test, visualize padding
 }
 
-/* -------------------------------------------------------------------- */
+/* --------------------------------------------------- */
 
 /*
    FOOTER
 */
 footer {
-//   background-color: orangered;  // test, visualize padding
+   background-color: orangered; // test, visualize padding
 }
 
-/* -------------------------------------------------------------------- */
+/* --------------------------------------------------- */

@@ -22,7 +22,8 @@
             "sass.enabled": true,
             "useTabChar": false,
             "spaceUnits": 3,
-            "linting.collapsed": false
+            "linting.collapsed": false,
+            "wordWrap": false
         }
     }
 }
