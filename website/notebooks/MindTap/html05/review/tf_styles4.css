@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*
+   T5 Case Problem Review
+   
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author: Connie Huang
+   Date: 2022-04-10
+      
+   Filename: tf_styles4.css
+
+   This file contains the screen styles used with the Trusted Friends blog tips
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+@import url("tf_designs.css");
+
+/* General Flex */
+body {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+/* Section Elements */
+section#left {
+  flex: 1 8 130px;
+  -webkit-flex: 1 8 130px;
+}
+section#right {
+  flex: 1 8 130px;
+  -webkit-flex: 8 1 351px;
+}
+section.tips {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+/* Article Elements */
+section.tips article {
+  flex: 2 1 351px;
+  -webkit-flex: 2 1 351px;
+}
+
+/* Aside Elements */
+section.tips aside {
+  flex: 1 2 250px;
+  -webkit-flex: 1 2 250px;
+}
+
+/* Navigation List */
+body > header > nav.horizontal > ul {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+}
+
+/* =============================
+	 Mobile Devices: 0 to 480px 
+   ============================= */
+
+/* Vertical List */
+@media screen and (max-width: 480px) {
+  section#left nav.vertical ul {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    height: 240px;
+  }
+
+  section#left {
+    order: 99;
+    -webkit-order: 99;
+  }
+
+  body > footer {
+    order: 100;
+    -webkit-order: 100;
+  }
+
+  /* Navigation List */
+  a#navicon {
+    display: block;
+  }
+
+  body > header > nav.horizontal > ul {
+    display: none;
+  }
+
+  a#navicon:hover+ul, nav.horizontal ul:hover {
+    display: block;
+  }
+}
+
+/* ===========================================
+	 Tablet and Desktop Devices: 481px or more 
+   =========================================== */
+
+/* Media Query */
+@media screen and (min-width: 481px) {
+  body > header > nav.horizontal > ul {
+    height: 160px;
+  }
+}
