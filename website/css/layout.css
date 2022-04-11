@@ -1,7 +1,7 @@
 /* 
    ------------------------
     ! UNDER CONSTRUCTION !
-   Last Updated: 2022-04-08
+   Last Updated: 2022-04-11
    ------------------------
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -14,55 +14,162 @@
 /* 
    General 
 */
+/* Applies flexbox to header, main */
+body > header,
+body > main {
+   display: flex;
+   display: -webkit-flex;
+}
+
 /* Adds padding to all main sections of the page
    instead of adding padding directly to the body
    to prevent problem of having blank border around page
    when applying colors to sections */
-body > * {
-  padding: 4em; }
+header > *,
+main > *,
+footer {
+   padding: 4rem;
+}
 
 /* Main stretches to fill full height of the page:
    https://stackoverflow.com/questions/17054158/ */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
+   display: flex;
+   display: -webkit-flex;
+   flex-flow: column nowrap;
+   -webkit-flex-flow: column nowrap;
+   min-height: 100vh;
+}
 
+/* Sections are aligned side by side using flexbox 
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 main {
-  flex: 1; }
+   flex-flow: row wrap;
+   -webkit-flex-flow: row wrap;
+}
 
 /* --------------------------------------------------- */
 /* 
-   HEADER NAV
-   https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp
+   HEADER, LOGO, NAV
 */
 header {
-  background-color: yellow; }
-  header nav {
-    text-align: right; }
-    header nav ul {
-      overflow: auto;
-      white-space: nowrap; }
-      header nav ul li {
-        display: inline-block;
-        list-style-type: none;
-        margin: 0;
-        padding: 1em 0 1em 2em; }
+   background-color: peachpuff;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header #logo p {
+   margin: 0;
+   padding: 0.3rem 0 0 0;
+   font-weight: 400;
+   letter-spacing: 0.3rem;
+   text-transform: lowercase;
+}
+
+header #logo p a {
+   text-decoration: none;
+   color: darkgoldenrod;
+}
+
+header nav ul {
+   overflow: auto;
+   white-space: nowrap;
+}
+
+header nav ul li {
+   display: inline-block;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   padding-left: 4rem;
+}
+
+header nav ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+header nav ul li a:hover {
+   color: aliceblue;
+}
 
 /* --------------------------------------------------- */
 /*
    MAIN
 */
 main {
-  background-color: orange; }
+   background-color: papayawhip;
+   flex: 1;
+}
+
+main img {
+   opacity: 30%;
+}
+
+main section.left {
+   flex: 2;
+}
+
+main section.right {
+   flex: 1;
+}
 
 /* --------------------------------------------------- */
 /*
    FOOTER
 */
 footer {
-  background-color: orangered; }
+   background-color: lightcoral;
+   text-align: center;
+}
 
 /* --------------------------------------------------- */
+/* 
+   MEDIA QUERIES
+   kind of messy, will fix later
+*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+   /* Sections are aligned on top of each other */
+   header,
+   main,
+   footer {
+      flex-flow: column wrap;
+      -webkit-flex-flow: column wrap;
+   }
+
+   .left {
+      padding-bottom: 0;
+   }
+
+   header nav ul li {
+      padding: 0 0.5rem;
+   }
+
+   .validator {
+      display: none !important;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+   /* Sections are aligned on top of each other */
+   header {
+      flex-flow: column wrap;
+      -webkit-flex-flow: column wrap;
+   }
+
+   .left {
+      padding-bottom: 0;
+   }
+
+   header nav ul li {
+      padding: 0 0.5rem;
+   }
+
+   .validator {
+      display: none !important;
+   }
+}
 
 /*# sourceMappingURL=layout.css.map */

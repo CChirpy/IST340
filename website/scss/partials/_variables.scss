@@ -12,7 +12,8 @@ $fsize-h4: $fsize-h5 * $fsize-scale;
 $fsize-h3: $fsize-h4 * $fsize-scale;
 $fsize-h2: $fsize-h3 * $fsize-scale;
 $fsize-h1: $fsize-h2 * $fsize-scale;
-$text-margin: 1rem;
+$global-line-height: 2.5rem;
+$global-text-margin: 1rem;
 
 // fontstacks
 $fontstack-1: 'Josefin Sans', sans-serif;

@@ -1,5 +1,23 @@
 # changelog
 
+### 2022-04-11, 12:30am-7:00am, update homepage
+- ADDED:
+   - `index.html`
+      - added sections
+         - section section
+         - pinned links
+      - added logo
+   - `layout.scss`
+      - attempt at fulfilling responsive webpage assignment
+         - media queries
+         - extra stuff to make it look a little less like a skeleton
+- UPDATED:
+   - `_typography.scss`
+      - margins
+      - line-height, note: need to change p later
+   - moved `md` folder back into `notebooks` folder
+   - renamed `notebooks` to `noteboook`
+
 ### 2022-04-08, new code
 - Comments:
    - moved around files and folders
@@ -8,6 +26,7 @@
       - better comments
       - tab size 5 for html
       - 3 space for css
+      - instead of putting everything in `resources.md`, links are commented within the code
 - ADDED:
    - `_variable.scss`
    - code to `layout.scss`

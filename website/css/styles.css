@@ -22,7 +22,8 @@
 */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
   font-size: 10px; }
@@ -41,6 +42,7 @@ body {
 /* 
    partials/_typography.scss/
    Sets all styles related to typography (font, color).
+   Inspired by https://archetypeapp.com/#
 */
 h1 {
   font-size: 3.7009em; }
@@ -62,10 +64,13 @@ h6 {
 
 p, blockquote,
 ul li, ol li, dl dt, dl dd {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  line-height: 2.5rem;
+  margin: 1rem 0 2rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 5rem; }
 
 ul li, ol li, dl dt, dl dd {
   list-style: square outside;

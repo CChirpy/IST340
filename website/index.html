@@ -2,7 +2,7 @@
 <!--
 	------------------------
 	 ! UNDER CONSTRUCTION !
-	Last Updated: 2022-04-08
+	Last Updated: 2022-04-11
 	------------------------
 	Author: Connie Huang
 	Contact: huangc8@tcnj.edu
@@ -22,8 +22,8 @@
 	<!-- TITLE, DESCRIPTION -->
 	<title>Home | Connie Huang</title>
 	<meta name="description" content="This website is Connie Huang's personal website. 
-				 It contains a collection of previous works, a blog, 
-				 a contact page, notebooks and other resources.">
+						It contains a collection of previous works, 
+						a blog, notebooks and other resources.">
 
 	<!-- SEO -->
 	<meta name="revision" content="2022-04-05">
@@ -46,29 +46,48 @@
 <body>
 	<!-- HEADER -->
 	<header>
+		<!--	LOGO	-->
+		<div id="logo" class="left">
+			<p><a href="index.html">Connie Huang</a></p>
+		</div>
+
 		<!-- NAV -->
-		<nav>
+		<nav class="right">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="work.html">Work</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="notebooks.html">Notebooks</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Work</a></li>
+				<li><a href="">Notebook</a></li>
+				<li><a href="">Blog</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<!-- MAIN -->
 	<main>
-		<!-- Home is styled uniquely -->
-		<div class="home">
-			<h1>Connie Huang</h1>
-		</div>
+		<!-- LANDING -->
+		<section class="left">
+			<h1 id="display">Connie Huang</h1>
+			<!-- https://loremipsum.io/ultimate-list-of-lorem-ipsum-generators/ -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		</section>
+
+		<!-- PINNED LINKS -->
+		<section class="right">
+			<h3>Pinned Links</h3>
+			<ul>
+				<li><a href="notebooks/IST340/constitution.html">The Constitution</a></li>
+				<li><a href="notebooks/IST340/recipe.html">Tiramisu Recipe</a></li>
+				<li><a href="notebooks/md/changelog.md" target="_blank">changelog</a></li>
+			</ul>
+		</section>
 	</main>
 
 	<!-- FOOTER -->
 	<footer>
+		<p>huangc8@tcnj.edu</p>
+
 		<!-- W3 VALIDATORS
 			No new lines, tabs, or spaces in between <a> element to prevent underscores between images.
 			https://stackoverflow.com/questions/9003969/underscore-between-two-image-links -->

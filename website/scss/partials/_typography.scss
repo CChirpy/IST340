@@ -19,10 +19,13 @@ h6 {
 p, blockquote, 
 ul li, ol li, dl dt, dl dd {
    font-size: $fsize-p;
+   line-height: $global-line-height;
+   margin: $global-text-margin 0 $global-text-margin * 2;
 }
 
 @include headings {
    font-weight: 400;
+   line-height: $global-line-height * 2;
 }
 
 @include lists {
