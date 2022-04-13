@@ -2,7 +2,7 @@
     "sass.enabled": false,
     "sass.options": {
         "includePaths": [
-            "website/scss/"
+            "root/scss/"
         ],
         "outputDir": "../css/",
         "imagePath": null,
@@ -12,18 +12,11 @@
     "linting.collapsed": true,
     "spaceUnits": 3,
     "path": {
-        "website/scss/styles.scss": {
-            "sass.enabled": true,
+        "root/scss/styles.scss": {
+            "sass.enabled": false,
             "useTabChar": false,
             "spaceUnits": 3,
             "linting.collapsed": false
-        },
-        "website/scss/layout.scss": {
-            "sass.enabled": true,
-            "useTabChar": false,
-            "spaceUnits": 3,
-            "linting.collapsed": false,
-            "wordWrap": false
         }
     }
 }

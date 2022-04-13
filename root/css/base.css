@@ -1,0 +1,156 @@
+/* 
+   ========================
+    ! UNDER CONSTRUCTION !
+   Last Updated: 2022-04-13
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: styles.css
+   Date Created: 2022-04-12
+   Purpose: Main stylesheet for website.
+*/
+
+/* ================================================
+   HEX COLORS
+   https://coolors.co/
+   ------------------------------------------------
+   #F8F2F0 - Isabelline
+   #EE554D - Fire Opal
+   #FFBA08 - Selective Yellow
+   #7F7EFF - Medium Slate Blue
+   #032B43 - Prussian Blue
+   #363537 - Jet
+   ================================================
+   RESOURCES
+   https://www.w3schools.com/cssref/css_default_values.asp
+   ------------------------------------------------
+*/
+
+/* ================================================
+   BASE STYLES
+   ------------------------------------------------ */
+
+* {
+   /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#sect1 */
+   box-sizing: border-box;
+}
+
+html {
+   /* root font */
+   font-size: 16px;
+}
+
+body {
+   /* fontstack + line spacing */
+   font-family: "Josefin Sans", sans-serif;
+   line-height: 1.5rem;
+
+   /* base page colors */
+   background-color: #363537;
+   color: #F8F2F0;
+
+   /* resets margin wrapping page */
+   margin: 0;
+}
+
+body > * {
+   /* pads every main section of the page */
+   padding: 3rem;
+}
+
+img {
+   /* https://stackoverflow.com/questions/7774814 */
+   display: block;
+   
+   margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6, nav ul li a {
+   text-transform: lowercase;
+}
+
+/* ================================================
+   BASE LINK STYLES 
+   ------------------------------------------------ */
+
+a {
+   color: #F8F2F0;
+}
+
+a:hover {
+   color: #FFBA08;
+}
+
+a:active {
+   color: #EE554D;
+}
+
+/* ================================================
+   LIST STYLES 
+   ------------------------------------------------ */
+
+ul {
+   /* spacing before the bullet */
+   padding-left: 1.5em;
+}
+
+li {
+   /* spacing after the bullet */
+   padding-left: 0.5em;
+}
+
+/* ================================================
+   NAV STYLES 
+   ------------------------------------------------ */
+
+nav ul {
+   padding: 0;
+}
+
+nav ul li {
+   padding: 0;
+   display: block;
+   list-style-type: none;
+}
+
+nav ul li a {
+   text-decoration: none;
+}
+
+/* ================================================
+   COLORS FOR MAIN
+   ------------------------------------------------ */
+
+main {
+   background-color: #FFBA08;
+   color: #363537;
+}
+
+main a {
+   color: #363537;
+}
+
+main a:hover {
+   color: #EE554D;
+}
+
+main a:active {
+   color: #7F7EFF;
+}
+
+/* ================================================
+   COLORS FOR HEADER, ASIDE, FOOTER
+   ------------------------------------------------ */
+
+header {
+   background-color: #EE554D;
+}
+
+aside {
+   background-color: #032B43;
+}
+
+footer {
+   background-color: #363537;
+}

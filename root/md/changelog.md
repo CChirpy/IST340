@@ -1,6 +1,24 @@
 # changelog
+https://owd.tcnj.edu/~huangc8/ist340/
 
-### 2022-04-11, 12:30am-7:00am, update homepage
+### 2022-04-12 to 04-13, restarted
+- TO-DO: 
+   - add flex layout in
+   - add back in previous assignments
+- NOTES:
+   - went back to css after all this time experimenting with scss
+   - took some inspiration from [Eric A. Meyer](https://meyerweb.com/ui/about.html)
+      - came across his website while looking for an [html page to test css](http://web.simmons.edu/~grovesd/comm244/notes/week3/html-test-page.html)
+- REMOVED:
+   - everything (archived, moved to separate folder)
+- ADDED:
+   - `index.html`
+   - `changelog.html`
+   - `base.css`
+      - colors
+      - basic margins + padding
+
+### 2022-04-11, update homepage
 - ADDED:
    - `index.html`
       - added sections
