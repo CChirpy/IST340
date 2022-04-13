@@ -62,7 +62,6 @@ body > * {
 img {
    /* https://stackoverflow.com/questions/7774814 */
    display: block;
-   
    margin: 1em 0;
 }
 
@@ -119,7 +118,7 @@ nav ul li a {
 }
 
 /* ================================================
-   COLORS FOR MAIN
+   MAIN SYLES
    ------------------------------------------------ */
 
 main {
@@ -137,6 +136,10 @@ main a:hover {
 
 main a:active {
    color: #7F7EFF;
+}
+
+main img {
+   margin: 2.5em 0;
 }
 
 /* ================================================
