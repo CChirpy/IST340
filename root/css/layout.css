@@ -1,0 +1,135 @@
+/* 
+   ========================
+    ! UNDER CONSTRUCTION !
+   Last Updated: 2022-04-15
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: styles.css
+   Date Created: 2022-04-14
+   Purpose: Layout of website, sets flexboxes.
+*/
+
+/* ================================================
+   GENERAL STYLES
+   ------------------------------------------------ */
+
+img {
+   width: 100%;
+}
+
+/* ================================================
+   NAV SPACING
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   ------------------------------------------------ */
+
+nav {
+   overflow: scroll;
+   white-space: nowrap;
+}
+
+nav ul {
+   margin: 0;
+}
+
+nav ul li {
+   margin-left: 2em;
+   padding: 0 0.2em;
+}
+
+nav ul li:first-child {
+   margin-left: 0;
+}
+
+/* responsive */
+nav ul li.logo {
+   padding-right: 2em;
+}
+
+/* extra style for underlining current page */
+nav ul li.active {
+   border-bottom: 2px solid #F8F2F0;
+   padding-top: 2px;
+}
+
+/* ================================================
+   HEADER NAV FLEXBOX
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   ------------------------------------------------ */
+
+nav {
+   /* nav parent */
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+}
+
+nav ul:first-child {
+   /* ul child */
+   flex: 1;
+}
+
+nav ul:last-child {
+   /* ul child */
+   flex: 1;
+
+   /* ul parent */
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-end;
+}
+
+/* ================================================
+   FOOTER STYLING
+   ------------------------------------------------ */
+
+footer ul {
+   justify-content: center !important;
+}
+
+.validator img {
+   margin: 1em 0 0 0;
+}
+
+.validator {
+   display: flex;
+   justify-content: center;
+}
+
+/* ================================================
+   MAIN FLEXBOX
+   ------------------------------------------------ */
+
+main {
+   display: flex;
+   flex-flow: row-reverse;
+}
+
+main > section {
+   flex: auto;
+}
+
+main > aside {
+   width: 30rem;
+}
+
+/* ================================================
+   MEDIA QUERIES
+   ------------------------------------------------ */
+
+/* Phone Only 
+   Remove image and compress lines */
+@media screen and (min-width: 320px) and (max-width: 480px) {}
+
+/* Small Tablet 
+   Make One Column */
+@media screen and (max-width: 760px) {}
+
+/* Tablets and Bigger 
+   Remove Image and Create Flexible Navigation */
+@media (min-width: 481px) {}
+
+/* Desktop Computers 
+   Return Navigation to a Row */
+@media (min-width: 1025px) {}

@@ -1,7 +1,7 @@
 /* 
    ========================
     ! UNDER CONSTRUCTION !
-   Last Updated: 2022-04-13
+   Last Updated: 2022-04-15
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -54,9 +54,9 @@ body {
    margin: 0;
 }
 
-body > * {
+body > *:not(main), main > * {
    /* pads every main section of the page */
-   padding: 3rem;
+   padding: 4rem;
 }
 
 img {
@@ -82,7 +82,7 @@ a:hover {
 }
 
 a:active {
-   color: #EE554D;
+   color: #7F7EFF;
 }
 
 /* ================================================
@@ -91,12 +91,12 @@ a:active {
 
 ul {
    /* spacing before the bullet */
-   padding-left: 1.5em;
+   padding-left: 0;
 }
 
 li {
    /* spacing after the bullet */
-   padding-left: 0.5em;
+   padding-left: 0.7em;
 }
 
 /* ================================================
@@ -109,8 +109,8 @@ nav ul {
 
 nav ul li {
    padding: 0;
-   display: block;
    list-style-type: none;
+   display: block;
 }
 
 nav ul li a {
@@ -121,24 +121,20 @@ nav ul li a {
    MAIN SYLES
    ------------------------------------------------ */
 
-main {
+main section {
    background-color: #FFBA08;
    color: #363537;
 }
 
-main a {
+main section a {
    color: #363537;
 }
 
-main a:hover {
+main section a:hover {
    color: #EE554D;
 }
 
-main a:active {
-   color: #7F7EFF;
-}
-
-main img {
+main section img {
    margin: 2.5em 0;
 }
 

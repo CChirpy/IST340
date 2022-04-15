@@ -2,7 +2,7 @@
 <!-- 
 	========================
 	 ! UNDER CONSTRUCTION !
-	Last Updated: 2022-04-13
+	Last Updated: 2022-04-15
 	========================
 	Author: Connie Huang
 	Contact: huangc8@tcnj.edu
@@ -38,6 +38,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
 </head>
 
 <body>
@@ -45,8 +46,11 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="" class="active">About</a></li>
-				<li><a href="" class="hidden">Work</a></li>
+				<li class="logo"><a href="index.html">Home</a></li>
+			</ul>
+			<ul>
+				<li class="active"><a href="index.html">About</a></li>
+				<li class="hidden"><a href="">Work</a></li>
 				<li><a href="">Resources</a></li>
 				<li><a href="">Sketches</a></li>
 				<li><a href="changelog.html">Changelog</a></li>
@@ -58,54 +62,55 @@
 		Sample testing: https://loremipsum.io/generator 
 		Image placeholder: https://dummyimage.com -->
 	<main>
-		<h1>About</h1>
+		<section>
+			<h1>About</h1>
+			<img src="https://dummyimage.com/16:9x720/000000/fff.png" alt="placeholder image from dummyimage.com" width="500">
 
-		<img src="https://dummyimage.com/16:9x720/000000/fff.png" alt="placeholder image from dummyimage.com" width="50%">
+			<h2>About this website</h2>
+			<p><b>Currently under construction!</b> To get a glimpse on what's been changed overtime, check out my <b><a href="changelog.html">changelog</a></b>.</p>
+			<p>This website was created for the course <b><a href="https://owd.tcnj.edu/~braender/">IST 340: Web Design &amp; Development</a></b>. It contains course materials, such as a web portfolio consisting a series of web pages dedicated to various web techniques, as well as MindTap assignments from the book, <b>New Perspectives on HTML5, CSS3, and JavaScript</b>, by Patrick M. Carey.</p>
 
-		<h2>About this website</h2>
-		<p><b>Currently under construction!</b> To get a glimpse on what's been changed overtime, check out my <b><a href="changelog.html">changelog</a></b>.</p>
-		<p>This website was created for the course <b><a href="https://owd.tcnj.edu/~braender/">IST 340: Web Design &amp; Development</a></b>. It contains course materials, such as a web portfolio consisting a series of web pages dedicated to various web techniques, as well as MindTap assignments from the book, <b>New Perspectives on HTML5, CSS3, and JavaScript</b>, by Patrick M. Carey.</p>
+			<h2>Stylistic choices</h2>
+			<p>To better visualize where each section is located and how much space each of them take up, each section of the page is colored with a unique and vibrant color.</p>
+			<p>When reading my code, my <code>html</code> files are indented with tabs the size of 5 spaces, while my <code>css</code> files are indented with 3 spaces.</p>
+		</section>
 
-		<h2>Stylistic choices</h2>
-		<p>To better visualize where each section is located and how much space each of them take up, each section of the page is colored with a unique and vibrant color.</p>
-		<p>When reading my code, my <code>html</code> files are indented with tabs the size of 5 spaces, while my <code>css</code> files are indented with 3 spaces.</p>
+		<!-- SIDENAV 
+			Contains work for web portfolio and mindtap cases. -->
+		<aside class="hidden">
+			<!-- WEB PORTFOLIO-->
+			<h3>Web Portfolio</h3>
+			<ul>
+				<li><a href="">The Constitution</a></li>
+				<li><a href="">Tiramisu Recipe</a></li>
+			</ul>
+			<!--	MINDTAP CASES -->
+			<h3>Mindtap Cases</h3>
+			<ul>
+				<li><a href="">Case Problem 1</a></li>
+				<li><a href="">Tutorial 1</a></li>
+				<li><a href="">Case Problem 2</a></li>
+				<li><a href="">Tutorial 2</a></li>
+				<li><a href="">Case Problem 3</a></li>
+				<li><a href="">Tutorial 3</a></li>
+				<li><a href="">Case Problem 4</a></li>
+				<li><a href="">Tutorial 4</a></li>
+				<li><a href="">Case Problem 5</a></li>
+				<li><a href="">Tutorial 5</a></li>
+				<li><a href="">Case Problem 6</a></li>
+				<li><a href="">Tutorial 6</a></li>
+				<li><a href="">Case Problem 7</a></li>
+				<li><a href="">Tutorial 7</a></li>
+			</ul>
+		</aside>
 	</main>
-
-	<!-- SIDENAV 
-		Contains work for web portfolio and mindtap cases. -->
-	<aside class="hidden">
-		<!-- WEB PORTFOLIO-->
-		<h3>Web Portfolio</h3>
-		<ul>
-			<li><a href="">The Constitution</a></li>
-			<li><a href="">Tiramisu Recipe</a></li>
-		</ul>
-
-		<!--	MINDTAP CASES -->
-		<h3>Mindtap Cases</h3>
-		<ul>
-			<li><a href="">Case Problem 1</a></li>
-			<li><a href="">Tutorial 1</a></li>
-			<li><a href="">Case Problem 2</a></li>
-			<li><a href="">Tutorial 2</a></li>
-			<li><a href="">Case Problem 3</a></li>
-			<li><a href="">Tutorial 3</a></li>
-			<li><a href="">Case Problem 4</a></li>
-			<li><a href="">Tutorial 4</a></li>
-			<li><a href="">Case Problem 5</a></li>
-			<li><a href="">Tutorial 5</a></li>
-			<li><a href="">Case Problem 6</a></li>
-			<li><a href="">Tutorial 6</a></li>
-			<li><a href="">Case Problem 7</a></li>
-			<li><a href="">Tutorial 7</a></li>
-		</ul>
-	</aside>
 
 	<!-- FOOTER -->
 	<footer>
 		<!-- List of pages -->
 		<nav>
 			<ul>
+				<li><a href="">Home</a></li>
 				<li><a href="">About</a></li>
 				<li><a href="">Work</a></li>
 				<li><a href="">Resources</a></li>

@@ -1,5 +1,21 @@
 # changelog
-https://owd.tcnj.edu/~huangc8/ist340/
+Website: https://owd.tcnj.edu/~huangc8/ist340/
+
+### 2022-04-15, responsive website
+- TO-DO:
+   - add media queries
+- ADDED: 
+   - `layout.css`
+      - flexboxes to nav, main, sidebar, and footer
+      - gave bottom border to active nav link
+      - nav spacing and overflow scroll
+      - image size to 100%
+   - `index.html`
+      - home to navigation
+- UPDATED:
+   - `base.css`
+      - a:active color
+      - increased wrap spacing
 
 ### 2022-04-12 to 04-13, restarted
 - TO-DO: 
