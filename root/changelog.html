@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!--
+<!-- 
+	========================
 	 ! UNDER CONSTRUCTION !
 	Last Updated: 2022-04-16
-
+	========================
 	Author: Connie Huang
 	Contact: huangc8@tcnj.edu
 	Version: HTML5, CSS3
@@ -20,9 +21,7 @@
 
 	<!-- TITLE, DESCRIPTION -->
 	<title>Home | Connie Huang</title>
-	<meta name="description" content="This website is Connie Huang's personal website. 
-						It contains a collection of previous works, 
-						a blog, notebooks and other resources.">
+	<meta name="description" content="This website is dedicated to the course IST 340.">
 
 	<!-- SEO -->
 	<meta name="revision" content="2022-04-16">
@@ -39,9 +38,22 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
 </head>
 
 <body>
+	<!-- HEADER NAV -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Resources</a></li>
+				<li><a href="">Sketches</a></li>
+				<li class="active"><a href="changelog.html">Changelog</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<!--	MAIN
 		https://markdowntohtml.com -->
@@ -49,7 +61,8 @@
 		<h1 id="changelog">changelog</h1>
 		<p>Live website: <a target="_blank" href="https://owd.tcnj.edu/~huangc8/ist340/">https://owd.tcnj.edu/~huangc8/ist340/</a></p>
 
-		<!-- ================================================================================= -->
+		<!-- ================================================================================= 
+		-->
 
 		<h3 id="2022-04-16">2022-04-15 to 04-16, responsive website pt. 2</h3>
 		<ul>
@@ -61,15 +74,13 @@
 									<li>changed some values to EMs or auto</li>
 								</ul>
 							</li>
-							<li>hid footer elements for phone</li>
+							<li>media query to display nav as column on smaller screens</li>
+							<li>media query to hide footer elements for phone</li>
 							<li>stickied sidebars</li>
 						</ul>
 					</li>
-					<li>to <code>index.html</code>
-						<ul>
-							<li>links to mindtap cases</li>
-						</ul>
-					</li>
+					<li>links to mindtap cases in <code>index.html</code></li>
+					<li>header, sidebar, footer to changelog</li>
 				</ul>
 			</li>
 			<li>REMOVED: <ul>
@@ -446,4 +457,49 @@
 			</li>
 		</ul>
 	</main>
+
+	<!-- SIDENAV 
+		Contains links to page locations. -->
+	<aside>
+		<div>
+			<h3>Jump to...</h3>
+			<!-- JUMP LINKS -->
+			<ul>
+				<li><a href="#2022-04-16">2022-04-16</a></li>
+				<li><a href="#2022-04-15">2022-04-15</a></li>
+				<li><a href="#2022-04-12">2022-04-12</a></li>
+				<li><a href="#2022-04-11">2022-04-11</a></li>
+				<li><a href="#2022-04-08">2022-04-08</a></li>
+				<li><a href="#2022-04-07">2022-04-07</a></li>
+				<li><a href="#2022-04-05">2022-04-05</a></li>
+				<li><a href="#2022-03-25">2022-03-25</a></li>
+				<li><a href="#2022-03-04">2022-03-04</a></li>
+				<li><a href="#2022-03-01">2022-03-01</a></li>
+				<li><a href="#2022-02-18">2022-02-18</a></li>
+				<li><a href="#2022-02-15">2022-02-15</a></li>
+				<li><a href="#2022-02-14">2022-02-14</a></li>
+				<li><a href="#2022-02-13">2022-02-13</a></li>
+				<li><a href="#2022-02-11">2022-02-11</a></li>
+				<li><a href="#2022-02-04">2022-02-04</a></li>
+				<li><a href="#2022-01-31">2022-01-31</a></li>
+				<li><a href="#2022-01-28">2022-01-28</a></li>
+			</ul>
+		</div>
+	</aside>
+
+	<!-- FOOTER -->
+	<footer>
+		<!-- TEXT CONTENT -->
+		<p>Connie Huang</p>
+		<p>huangc8@tcnj.edu</p>
+
+		<!-- W3 VALIDATORS
+		 	https://stackoverflow.com/questions/9003969/underscore-between-two-image-links -->
+
+		<!-- HTML VALIDATOR -->
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fchangelog.html" target="_blank"><img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/68b012b5c19b26f75d9bee2409420c916b2d451a/html5-validator-badge-blue.svg" alt="Valid HTML!" height="30"></a>
+
+		<!-- CSS VALIDATOR -->
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fchangelog.html&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank"><img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!" height="30"></a>
+	</footer>
 </body>

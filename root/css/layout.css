@@ -86,6 +86,14 @@ footer {
    }
 }
 
+/* swich nav to columns at around point when it starts to wrap */
+@media (max-width: 616px) {
+   nav ul {
+      flex-flow: column wrap;
+      align-items: center;
+   }
+}
+
 /* Tablets and Bigger 
    Content shows in 2 columns */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -114,7 +122,7 @@ footer {
       position: sticky;
       top: 2em;
    }
-   
+
    /* grid */
    body {
       display: grid; 
@@ -132,5 +140,5 @@ footer {
 /* Extra large screens will 
    just continue to scale the page */
 @media (min-width: 1280px) {
-   html {font-size: 1.5vw;}
+   html {font-size: 1.3vw;}
 }

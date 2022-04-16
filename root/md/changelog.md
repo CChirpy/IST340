@@ -1,16 +1,21 @@
 # changelog
 Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
+TO-DO:
+- tiramisu recipe
+- the constitution
+
 ### 2022-04-15 to 04-16, responsive website pt. 2
 - ADDED:
    - to `layout.css`
       - grids to media queries for desktops and tablets
          - Used [CSS Grid Generator](https://cssgrid-generator.netlify.app)
          - changed some values to EMs or auto
-      - hid footer elements for phone
+      - media query to display nav as column on smaller screens
+      - media query to hide footer elements for phone
       - stickied sidebars
-   - to `index.html`
-      - links to mindtap cases
+   - links to mindtap cases in `index.html`
+   - header, sidebar, footer to changelog
 - REMOVED: 
    - from `index.html`
       - nav links: about, work (combined into homepage)
