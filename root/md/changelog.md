@@ -1,5 +1,26 @@
 # changelog
-Website: https://owd.tcnj.edu/~huangc8/ist340/
+Live website: https://owd.tcnj.edu/~huangc8/ist340/
+
+### 2022-04-15 to 04-16, responsive website pt. 2
+- ADDED:
+   - to `layout.css`
+      - grids to media queries for desktops and tablets
+         - Used [CSS Grid Generator](https://cssgrid-generator.netlify.app)
+         - changed some values to EMs or auto
+      - hid footer elements for phone
+      - stickied sidebars
+   - to `index.html`
+      - links to mindtap cases
+- REMOVED: 
+   - from `index.html`
+      - nav links: about, work (combined into homepage)
+      - nav links from footer
+- UPDATED:
+   - `layout.css`
+      - combined horizontal nav styles
+      - simplified flexboxes
+   - `base.css`
+      - brightened some colors
 
 ### 2022-04-15, responsive website
 - TO-DO:
@@ -10,7 +31,7 @@ Website: https://owd.tcnj.edu/~huangc8/ist340/
       - gave bottom border to active nav link
       - nav spacing and overflow scroll
       - image size to 100%
-   - `index.html`
+   - to `index.html`
       - home to navigation
 - UPDATED:
    - `base.css`

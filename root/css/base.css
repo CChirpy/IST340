@@ -1,7 +1,7 @@
 /* 
    ========================
     ! UNDER CONSTRUCTION !
-   Last Updated: 2022-04-15
+   Last Updated: 2022-04-16
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -11,16 +11,17 @@
    Purpose: Main stylesheet for website.
 */
 
-/* ================================================
+/*
+   ================================================
    HEX COLORS
    https://coolors.co/
    ------------------------------------------------
    #F8F2F0 - Isabelline
    #EE554D - Fire Opal
    #FFBA08 - Selective Yellow
-   #7F7EFF - Medium Slate Blue
-   #032B43 - Prussian Blue
-   #363537 - Jet
+   #6969FF - Medium Slate Blue
+   #033F65 - Indigo Dye
+   #2A282C - Raisin Black
    ================================================
    RESOURCES
    https://www.w3schools.com/cssref/css_default_values.asp
@@ -38,7 +39,7 @@
 
 html {
    /* root font */
-   font-size: 16px;
+   font-size: 18px;
 }
 
 body {
@@ -54,15 +55,14 @@ body {
    margin: 0;
 }
 
-body > *:not(main), main > * {
+body > * {
    /* pads every main section of the page */
-   padding: 4rem;
+   padding: 3rem;
 }
 
 img {
    /* https://stackoverflow.com/questions/7774814 */
    display: block;
-   margin: 1em 0;
 }
 
 h1, h2, h3, h4, h5, h6, nav ul li a {
@@ -91,7 +91,7 @@ a:active {
 
 ul {
    /* spacing before the bullet */
-   padding-left: 0;
+   padding-left: 1em;
 }
 
 li {
@@ -121,21 +121,17 @@ nav ul li a {
    MAIN SYLES
    ------------------------------------------------ */
 
-main section {
+main {
    background-color: #FFBA08;
    color: #363537;
 }
 
-main section a {
+main a {
    color: #363537;
 }
 
-main section a:hover {
+main a:hover {
    color: #EE554D;
-}
-
-main section img {
-   margin: 2.5em 0;
 }
 
 /* ================================================
@@ -147,9 +143,9 @@ header {
 }
 
 aside {
-   background-color: #032B43;
+   background-color: #033F65;
 }
 
 footer {
-   background-color: #363537;
+   background-color: #2A282C;
 }
