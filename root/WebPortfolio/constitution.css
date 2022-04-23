@@ -1,0 +1,155 @@
+/* 
+   ========================
+    ! UNDER CONSTRUCTION !
+   Last Updated: 2022-04-23
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: constitution.css
+   Date Created: 2022-04-19
+   Purpose: Styles specific for The Constitution assignment.
+*/
+
+/* ================================================
+   HEADER STYLES
+   ------------------------------------------------ */
+
+/* Sticky header */
+header {
+   /* positioning */
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   
+   /* styling */
+   padding: 1.3em 1em 1em;
+}
+
+/* Positions and styles nav link */
+header nav {
+   text-align: right;
+}
+header nav ul {
+   margin: 0;
+}
+header nav ul li {
+   display: inline-block;
+   padding: 0 1em;
+   margin: 0;
+}
+
+/* ================================================
+   ASIDES
+   ------------------------------------------------
+   Center list while still aligned left:
+   https://perishablepress.com/css-center-align-list-left-align-text/
+
+   Shape maker:
+   https://bennettfeely.com/clippy/
+   ------------------------------------------------ */
+
+aside {
+   /* positioning */
+   position: fixed;
+   width: 12em;
+   
+   /* styling */
+   padding: 3em;
+   transform: scale(70%);
+}
+
+aside p {
+   /* clears p margins for both asides */
+   margin: 0;
+}
+
+aside:first-of-type p {
+   /* bookmarks header */
+   text-decoration: underline;
+   font-weight: 700;
+}
+
+aside:first-of-type {
+   /* positioning */
+   top: -0.2em;
+   left: 0.8em;
+   
+   /* list styling */
+   text-align: center;
+   
+   /* ribbon */
+   padding-bottom: 5em;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}
+
+aside:first-of-type ul {
+   margin-bottom: 0;
+   
+   /* list styling */
+   display: inline-block; 
+   text-align: left; 
+}
+
+aside:last-of-type {
+   /* positioning */
+   bottom: -8em;
+   right: 0.8em;
+   
+   /* styling */
+   border-top-left-radius: 2em;
+   border-top-right-radius: 2em;
+   
+   /* before hover */
+   transform: scale(70%) translateY(85%);
+   transition: 0.1s linear;
+}
+
+aside:last-of-type:hover {
+   /* after hover */
+   transform: scale(70%) translateY(0);
+   transition: 0.2s ease-in;
+}
+
+/* ================================================
+   ARTICLE + FOOTER STYLES
+   ------------------------------------------------ */
+
+article {
+   /* copied from base.css main section */
+   background-color: #FFBA08;
+   color: #363537;
+   
+   margin: 0 11em;
+}
+
+/* ================================================
+   FOOTER + FOOTER STYLES
+   ------------------------------------------------ */
+
+footer {
+   text-align: center;
+}
+
+footer img {
+   display: inline-block;
+   margin-bottom: 1em;
+}
+
+/* ================================================
+   TYPOGRAPHY STYLES
+   ------------------------------------------------ */
+blockquote {
+   margin: 0;
+   padding-left: 2em;
+   border-left: 2px solid;
+}
+
+h1, h2, h3 {
+   line-height: 1.5em;
+}
+
+/* Provided in base.css */
+/* ul {}
+   li {} 
+   p {} */

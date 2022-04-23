@@ -1,7 +1,7 @@
 /* 
    ========================
     ! UNDER CONSTRUCTION !
-   Last Updated: 2022-04-16
+   Last Updated: 2022-04-18
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -48,7 +48,7 @@ body {
    line-height: 1.5rem;
 
    /* base page colors */
-   background-color: #363537;
+   background-color: #FFBA08;
    color: #F8F2F0;
 
    /* resets margin wrapping page */
@@ -63,10 +63,6 @@ body > * {
 img {
    /* https://stackoverflow.com/questions/7774814 */
    display: block;
-}
-
-h1, h2, h3, h4, h5, h6, nav ul li a {
-   text-transform: lowercase;
 }
 
 /* ================================================
@@ -97,6 +93,7 @@ ul {
 li {
    /* spacing after the bullet */
    padding-left: 0.7em;
+   margin-bottom: 0.3em;
 }
 
 /* ================================================
@@ -113,7 +110,7 @@ nav ul li {
    display: block;
 }
 
-nav ul li a {
+nav a {
    text-decoration: none;
 }
 

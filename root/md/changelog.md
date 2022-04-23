@@ -2,8 +2,31 @@
 Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
 TO-DO:
-- tiramisu recipe
-- the constitution
+1. tiramisu recipe
+2. blog page
+3. contact page
+4. resources, sketches
+
+### 2022-04-22, updated constitution.css
+- ADDED: 
+   - styles to `constitution.css`
+      - header, article, footer
+      - asides
+         - bookmarks ribbon
+         - note animation
+- UPDATED: `base.css`
+   - body bg color is now yellow
+
+### 2022-04-18 to 04-19, added back constitution
+- ADDED:
+   - `constitution.html`
+      - nav links and bookmarks
+      - heading line-height
+      - article color
+   - `constitution.css`
+- UPDATED:
+   - ran coverage in chrome
+   - removed dead grid code in `layout.css`
 
 ### 2022-04-15 to 04-16, responsive website pt. 2
 - ADDED:
