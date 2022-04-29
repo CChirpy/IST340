@@ -1,29 +1,7 @@
-<!-- 
-	ASSIGNMENT FOR IST 340 STUDENTS - INSTRUCTIONS 
-
-     Add style for the grouping grouping tags found in this file. 
-	These include the following: header, aside, article, footer, nav, blockquote, ul and li, h1, h2, h3, p.
-     The style must be in an external stylesheet before you submit this assignment.
-
-     In the navigation area, create bookmarks to the articles in the Constitution. 
-     Follow these bookmarking instructions. https://www.w3schools.com/html/html_links_bookmarks.asp
-     Do not use a base reference for this page. Use full URLs for links. 
-     
-     There are two "aside" sections but both should use the same styling code.  
-     The asides should be sticky and floating so that it doesn't disapper when you scroll.
-     
-     Change the values in the head to correspond to you.
-     
-     Modify the Validation code in this footer so that it goes to your account to check your code. This code your code.
-	This code assumes that this page will be called constitution and that it sits inside your sits inside your www folder.
--->
-
 <!DOCTYPE html>
-
 <!-- 
 	========================
-	 ! UNDER CONSTRUCTION ! 
-	Last Updated: 2022-04-23
+	Last Updated: 2022-04-29
 	========================
 	Author: Connie Huang
 	Contact: huangc8@tcnj.edu
@@ -45,10 +23,10 @@
 		we will leave out all base references and use full links for links in this file. -->
 	
 	<!-- STYLESHEETS -->
-	<!--	<link rel="stylesheet" href="../css/base.css"> -->
-	<!--	<link rel="stylesheet" href="constitution.css"> -->
-	<link rel="stylesheet" href="https://owd.tcnj.edu/~huangc8/ist340/css/base.css"> 
-	<link rel="stylesheet" href="https://owd.tcnj.edu/~huangc8/ist340/WebPortfolio/constitution.css"> 
+	<link rel="stylesheet" href="../css/base.css"> 
+	<link rel="stylesheet" href="constitution.css"> 
+<!--	<link rel="stylesheet" href="https://owd.tcnj.edu/~huangc8/ist340/css/base.css"> -->
+<!--	<link rel="stylesheet" href="https://owd.tcnj.edu/~huangc8/ist340/WebPortfolio/constitution.css"> -->
 
 	<!--	FONT -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,15 +45,33 @@
 	<meta name="revision" content="$revision: 1.0 $ 2022/04/18 08:00:00 $">
 	<meta name="authors" lang="en-us" content="Dr. L. Braender, Connie Huang">
 </head>
+   
+<!-- 
+	ASSIGNMENT FOR IST 340 STUDENTS - INSTRUCTIONS 
+
+     Add style for the grouping grouping tags found in this file. 
+	These include the following: header, aside, article, footer, nav, blockquote, ul and li, h1, h2, h3, p.
+     The style must be in an external stylesheet before you submit this assignment.
+
+     In the navigation area, create bookmarks to the articles in the Constitution. 
+     Follow these bookmarking instructions. https://www.w3schools.com/html/html_links_bookmarks.asp
+     Do not use a base reference for this page. Use full URLs for links. 
+     
+     There are two "aside" sections but both should use the same styling code.  
+     The asides should be sticky and floating so that it doesn't disapper when you scroll.
+     
+     Change the values in the head to correspond to you.
+     
+     Modify the Validation code in this footer so that it goes to your account to check your code. This code your code.
+	This code assumes that this page will be called constitution and that it sits inside your sits inside your www folder.
+-->
 
 <body>
 	<!--	TOP NAVIGATIONAL BAR -->
 	<header>
 		<nav><ul>
-		<!--
-			<li><a href="../index.html">&#8592; Home</a></li>
-		-->
-			<li><a href="https://owd.tcnj.edu/~huangc8/ist340/">&#8592; Home</a></li>
+			<li><a href="../index.html">&#8592; Home</a></li> 
+		<!--	<li><a href="https://owd.tcnj.edu/~huangc8/ist340/">&#8592; Home</a></li> -->
 			<li><a href="#top">&#8593; Top</a></li>
 		</ul></nav>
 	</header>
@@ -103,10 +99,10 @@
 
 	<article>
 		<!-- HEADER -->
-		<h1> The Constitution of the United States: <br /> A Transcription </h1>
+		<h1 id="preamble"> The Constitution of the United States: <br /> A Transcription </h1>
 
 		<!-- BLOCK QUOTE -->
-		<blockquote id="preamble">We the People of the United States, in Order to form a more perfect Union,
+		<blockquote id="article1">We the People of the United States, in Order to form a more perfect Union,
 			establish Justice, insure domestic Tranquility, provide for the common defence,
 			promote the general Welfare, and secure the Blessings of Liberty to ourselves and
 			our Posterity, do ordain and establish this Constitution for the United States of
@@ -114,7 +110,7 @@
 
 		<!-- ARTICLE II -->
 
-		<h2 id="article1"> Article. I. </h2>
+		<h2> Article. I. </h2>
 		<h3> Section. 1. </h3>
 
 		<p>All legislative Powers herein granted shall be vested in a Congress of the
@@ -366,14 +362,14 @@
 			in Imports or Exports, shall be for the Use of the Treasury of the United States;
 			and all such Laws shall be subject to the Revision and Controul of the Congress.</p>
 
-		<p>No State shall, without the Consent of Congress, lay any Duty of Tonnage, keep
+		<p id="article2">No State shall, without the Consent of Congress, lay any Duty of Tonnage, keep
 			Troops, or Ships of War in time of Peace, enter into any Agreement or Compact with
 			another State, or with a foreign Power, or engage in War, unless actually invaded,
 			or in such imminent Danger as will not admit of delay.</p>
 
 		<!-- ARTICLE II -->
 
-		<h2 id="article2"> Article. II. </h2>
+		<h2> Article. II. </h2>
 
 		<h3> Section. 1. </h3>
 
@@ -473,13 +469,13 @@
 
 		<h3> Section. 4. </h3>
 
-		<p>The President, Vice President and all civil Officers of the United States,
+		<p id="article3">The President, Vice President and all civil Officers of the United States,
 			shall be removed from Office on Impeachment for, and Conviction of, Treason,
 			Bribery, or other high Crimes and Misdemeanors.</p>
 
 		<!-- ARTICLE II -->
 
-		<h2 id="article3"> Article. III. </h2>
+		<h2> Article. III. </h2>
 
 		<h3> Section. 1. </h3>
 
@@ -520,13 +516,13 @@
 			shall be convicted of Treason unless on the Testimony of two Witnesses to the
 			same overt Act, or on Confession in open Court.</p>
 
-		<p>The Congress shall have Power to declare the Punishment of Treason, but no
+		<p id="article4">The Congress shall have Power to declare the Punishment of Treason, but no
 			Attainder of Treason shall work Corruption of Blood, or Forfeiture except
 			during the Life of the Person attainted.</p>
 
 		<!-- ARTICLE IV -->
 
-		<h2 id="article4"> Article. IV. </h2>
+		<h2> Article. IV. </h2>
 
 		<h3> Section. 1. </h3>
 
@@ -564,16 +560,16 @@
 
 		<h3> Section. 4. </h3>
 
-		<p>The United States shall guarantee to every State in this Union a Republican
+		<p id="article5">The United States shall guarantee to every State in this Union a Republican
 			Form of Government, and shall protect each of them against Invasion; and on
 			Application of the Legislature, or of the Executive (when the Legislature cannot
 			be convened), against domestic Violence.</p>
 
 		<!-- ARTICLE V -->
 
-		<h2 id="article5"> Article. V. </h2>
+		<h2> Article. V. </h2>
 
-		<p>The Congress, whenever two thirds of both Houses shall deem it necessary,
+		<p id="article6">The Congress, whenever two thirds of both Houses shall deem it necessary,
 			shall propose Amendments to this Constitution, or, on the Application of the
 			Legislatures of two thirds of the several States, shall call a Convention for
 			proposing Amendments, which, in either Case, shall be valid to all Intents and
@@ -587,7 +583,7 @@
 
 		<!-- ARTICLE VI -->
 
-		<h2 id="article6"> Article. VI. </h2>
+		<h2> Article. VI. </h2>
 
 		<p>All Debts contracted and Engagements entered into, before the Adoption of
 			this Constitution, shall be as valid against the United States under this
@@ -599,7 +595,7 @@
 			Judges in every State shall be bound thereby, any Thing in the Constitution or
 			Laws of any State to the Contrary notwithstanding.</p>
 
-		<p>The Senators and Representatives before mentioned, and the Members of the
+		<p id="article7">The Senators and Representatives before mentioned, and the Members of the
 			several State Legislatures, and all executive and judicial Officers, both of
 			the United States and of the several States, shall be bound by Oath or Affirmation,
 			to support this Constitution; but no religious Test shall ever be required as a
@@ -607,7 +603,7 @@
 
 		<!-- ARTICLE VII -->
 
-		<h2 id="article7"> Article. VII. </h2>
+		<h2> Article. VII. </h2>
 
 		<p>The Ratification of the Conventions of nine States, shall be sufficient for the
 			Establishment of this Constitution between the States so ratifying the Same.</p>
@@ -618,14 +614,14 @@
 			the thirty second and thirty third Lines of the first Page and the Word "the"
 			being interlined between the forty third and forty fourth Lines of the second Page.</p>
 
-		<p>Attest William Jackson Secretary<br />
+		<p id="authors">Attest William Jackson Secretary<br />
 			done in Convention by the Unanimous Consent of the States present the Seventeenth
 			Day of September in the Year of our Lord one thousand seven hundred and Eighty
 			seven and of the Independance of the United States of America the Twelfth In
 			witness whereof We have hereunto subscribed our Names,</p>
 
 
-		<h3 id="authors">G°. Washington</h3>
+		<h3>G°. Washington</h3>
 		<p>President and Deputy from Virginia</p>
 
 		<h3>Delaware</h3>
@@ -701,13 +697,13 @@
 
 	<footer>
 		<p>
-			<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fconstitution.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2FWebPortfolio%2Fconstitution.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
 				<img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
 
 			<!-- I'm forcing some blank space between images with the following code -->
 			&nbsp;&nbsp;&nbsp;&nbsp;
 
-			<a href="http://validator.w3.org/check?uri=https://owd.tcnj.edu/~huangc8/ist340/constitution.html">
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F~huangc8%2Fist340%2FWebPortfolio%2Fconstitution.html">
 				<img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
 
 			<br />This code has been validated by W3C.org

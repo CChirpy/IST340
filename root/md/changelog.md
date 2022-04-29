@@ -2,10 +2,22 @@
 Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
 TO-DO:
-1. tiramisu recipe
-2. blog page
-3. contact page
+1. constitution 
+	- issues: aside scaling and transition broken on safari
+	- bottom aside passes through footer
+2. tiramisu recipe
+3. blog page
 4. resources, sketches
+5. contact page?
+
+### 2022-04-29, fixed constitution + add blog
+- ADDED: 
+   - `WebPortfolio/blog.html`
+- UPDATED:
+   - `constitution.css`
+      - replaced percentages with ems
+      - made fontsize and line height smaller
+      - aside and header spacing
 
 ### 2022-04-22, updated constitution.css
 - ADDED: 
