@@ -1,0 +1,51 @@
+/* 
+   ========================
+   Last Updated: 2022-04-29
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: portfolio.css
+   Date Created: 2022-04-29
+   Purpose: Styles for all web portfolio assignments
+*/
+
+/* ================================================
+   HEADER STYLES
+   ------------------------------------------------ */
+
+/* Sticky header */
+header {
+   /* positioning */
+   position: sticky;
+   top: 0;
+   
+   /* styling */
+   padding: 1.3em 1em 1em;
+}
+
+/* Positions and styles nav link */
+header nav {
+   text-align: right;
+}
+header nav ul {
+   margin: 0;
+}
+header nav ul li {
+   display: inline-block;
+   padding: 0 1.5em 0 0;
+   margin: 0;
+}
+
+/* ================================================
+   FOOTER STYLES
+   ------------------------------------------------ */
+
+footer {
+   text-align: center;
+}
+
+footer img {
+   display: inline-block;
+   margin: 0 .5em 1em;
+}

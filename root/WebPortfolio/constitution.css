@@ -14,37 +14,11 @@
    HEADER STYLES
    ------------------------------------------------ */
 
-/* Sticky header */
-header {
-   /* positioning */
-   position: sticky;
-   top: 0;
-   
-   /* styling */
-   padding: 1.3em 1em 1em;
-}
-
-/* Positions and styles nav link */
-header nav {
-   text-align: right;
-}
-header nav ul {
-   margin: 0;
-}
-header nav ul li {
-   display: inline-block;
-   padding: 0 1.5em;
-   margin: 0;
-}
+/* Moved to portfolio.css */
+/* header {} */
 
 /* ================================================
-   ASIDES
-   ------------------------------------------------
-   Center list while still aligned left:
-   https://perishablepress.com/css-center-align-list-left-align-text/
-
-   Shape maker:
-   https://bennettfeely.com/clippy/
+   ASIDE STYLES
    ------------------------------------------------ */
 
 aside {
@@ -62,6 +36,16 @@ aside p {
    /* clears p margins for both asides */
    margin: 0;
 }
+
+/* ================================================
+   BOOKMARK ASIDE
+   ------------------------------------------------
+   Center list while still aligned left:
+   https://perishablepress.com/css-center-align-list-left-align-text/
+
+   Shape maker:
+   https://bennettfeely.com/clippy/
+   ------------------------------------------------ */
 
 aside:first-of-type p {
    /* bookmarks header */
@@ -88,6 +72,10 @@ aside:first-of-type ul {
    text-align: left; 
 }
 
+/* ================================================
+   NOTE
+   ------------------------------------------------ */
+
 aside:last-of-type {
    /* positioning */
    bottom: 0em;
@@ -98,7 +86,7 @@ aside:last-of-type {
    border-top-right-radius: 1.5em;
    
    /* before hover */
-   transform: translateY(30em);
+   transform: translateY(28em);
    transition: 0.1s linear;
 }
 
@@ -117,21 +105,20 @@ article {
    background-color: #FFBA08;
    color: #363537;
    
+   /* spacing */
    margin: 0 11em;
+}
+
+article li {
+   margin-bottom: 0.5em;
 }
 
 /* ================================================
    FOOTER STYLES
    ------------------------------------------------ */
 
-footer {
-   text-align: center;
-}
-
-footer img {
-   display: inline-block;
-   margin-bottom: 1em;
-}
+/* Moved to portfolio.css */
+/* footer {} */
 
 /* ================================================
    TYPOGRAPHY STYLES

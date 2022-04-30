@@ -2,22 +2,30 @@
 Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
 TO-DO:
-1. constitution 
-	- issues: aside scaling and transition broken on safari
-	- bottom aside passes through footer
-2. tiramisu recipe
-3. blog page
-4. resources, sketches
-5. contact page?
+- change:
+   - unsticky left sidebar and add back to top button
+   - move note in constitution to left side on smaller screens
+   - clean up mindtap assignments
+- blog page
+- tiramisu recipe
+- resources
+- contact page?
 
 ### 2022-04-29, fixed constitution + add blog
 - ADDED: 
-   - `WebPortfolio/blog.html`
+   - `blog.html` & `blog.css`
+      - Blog & Grid assignment
+      - placeholders, change soon
+   - `portfolio.css`
+      - header and footer styles persist between web portfolio pages
 - UPDATED:
    - `constitution.css`
       - replaced percentages with ems
       - made fontsize and line height smaller
       - aside and header spacing
+      - added bottom margin to article lists
+- REMOVED:
+   - small bottom margin from li in `base.css`
 
 ### 2022-04-22, updated constitution.css
 - ADDED: 

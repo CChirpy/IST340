@@ -1,0 +1,55 @@
+/* ================================================
+   BEFORE GALLERY
+   ------------------------------------------------ */
+
+main h1 {
+   border-bottom: solid 2px black;
+   padding-bottom: 0.5em;
+   margin-bottom: 1em;
+}
+
+main h2 {
+   margin-top: 1.2em;
+}
+
+/* ================================================
+   GRID GALLERY
+   ------------------------------------------------
+   https://css-tricks.com/snippets/css/complete-guide-grid/
+   ------------------------------------------------ */
+
+main > section {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 2em;
+   grid-row-gap: 1em;
+}
+
+main > section article {
+   grid-column: auto / span 1;
+   grid-row: auto / span 1;
+}
+
+main > section article:first-of-type {
+   grid-column: auto / span 2;
+}
+
+main > section article img {
+   width: 100%;
+}
+
+/* ================================================
+   MEDIA QUERIES
+   ------------------------------------------------ */
+
+@media (max-width: 600px) {
+   main > section {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+   main > section {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
