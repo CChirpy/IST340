@@ -11,6 +11,13 @@ TO-DO:
 - resources
 - contact page?
 
+### 2022-05-01, updated blog
+- UPDATED: 
+   - main margins in `portfolio.css`
+   - `portfolio.html`
+      - replaced section with div
+      - replaced placeholder text and images with own images and descriptions
+
 ### 2022-04-29, fixed constitution + add blog
 - ADDED: 
    - `blog.html` & `blog.css`

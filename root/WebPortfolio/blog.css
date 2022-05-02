@@ -1,9 +1,9 @@
 /* ================================================
-   BEFORE GALLERY
+   MAIN STYLES
    ------------------------------------------------ */
 
 main h1 {
-   border-bottom: solid 2px black;
+   border-bottom: solid 2px #2A282C;
    padding-bottom: 0.5em;
    margin-bottom: 1em;
 }
@@ -18,23 +18,23 @@ main h2 {
    https://css-tricks.com/snippets/css/complete-guide-grid/
    ------------------------------------------------ */
 
-main > section {
+main > div {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-column-gap: 2em;
    grid-row-gap: 1em;
 }
 
-main > section article {
+main > div article {
    grid-column: auto / span 1;
    grid-row: auto / span 1;
 }
 
-main > section article:first-of-type {
+main > div article:first-of-type {
    grid-column: auto / span 2;
 }
 
-main > section article img {
+main > div article img {
    width: 100%;
 }
 
@@ -43,17 +43,23 @@ main > section article img {
    ------------------------------------------------ */
 
 @media (max-width: 600px) {
-   main > section {
+   main > div {
       grid-template-columns: repeat(1, 1fr);
    }
 
-   main > section article:first-of-type {
+   main > div article:first-of-type {
       grid-column: auto / span 1;
    }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
-   main > section {
+   main > div {
       grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width: 1201px) {
+   main {
+      margin: 0 8rem;
    }
 }
