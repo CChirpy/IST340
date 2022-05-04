@@ -1,15 +1,24 @@
 # changelog
 Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
-TO-DO:
+### To-do:
 - change:
-   - unsticky left sidebar and add back to top button
+   - add back to top button for changelog
    - move note in constitution to left side on smaller screens
+   - change header for blog and form to match index
    - clean up mindtap assignments
-- blog page
-- tiramisu recipe
+- recipe page
+- form page
 - resources
-- contact page?
+
+### 2022-05-03, updated webportfolio
+- ADDED:
+   - folder for css in `WebPortfolio` folder
+      - moved `blog.css`, `constitution.css` and `portfolio.css` into folder
+   - `recipe.html`
+   - `form.html`
+- UPDATED:
+   - `base.css`: lowercase `ul li` a instead of `nav ul li a`
 
 ### 2022-05-01, updated blog
 - UPDATED: 

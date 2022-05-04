@@ -1,7 +1,6 @@
 /* 
    ========================
-    ! UNDER CONSTRUCTION !
-   Last Updated: 2022-04-18
+   Last Updated: 2022-05-03
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -39,7 +38,7 @@ nav ul li.active {
    border-bottom: 2px solid #F8F2F0;
 }
 
-h1, h2, h3, h4, h5, h6, nav ul li a {
+h1, h2, h3, h4, h5, h6, ul li a {
    text-transform: lowercase;
 }
 
@@ -134,7 +133,8 @@ footer {
       flex-flow: column wrap;
    }
 
-   header nav, aside div {
+   /* sticky side header nav */
+   header nav {
       position: sticky;
       top: 2em;
    }

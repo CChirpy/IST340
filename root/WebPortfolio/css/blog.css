@@ -1,3 +1,15 @@
+/* 
+   ========================
+   Last Updated: 2022-05-03
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: constitution.css
+   Date Created: 2022-04-19
+   Purpose: Styles specific for The Constitution assignment.
+*/
+
 /* ================================================
    MAIN STYLES
    ------------------------------------------------ */
@@ -60,6 +72,6 @@ main > div article img {
 
 @media (min-width: 1201px) {
    main {
-      margin: 0 8rem;
+      margin: 0 10rem;
    }
 }
