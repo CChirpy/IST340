@@ -11,6 +11,16 @@ Live website: https://owd.tcnj.edu/~huangc8/ist340/
 - form page
 - resources
 
+### 2022-05-05, updated header layout
+- ADDED:
+   - `layout2.css`
+      - changed `layout.css` to `layout1.css`
+      - moved footer and header layout to `layout1.css`, left grid layouts for larger screens in `layout2.css`
+- UPDATED:
+   - moved general styles from `layout.css` to `base.css`
+   - removed margins in ul of bookmark in `constitution.css`
+   - moved around header links
+
 ### 2022-05-03, updated webportfolio
 - ADDED:
    - folder for css in `WebPortfolio` folder

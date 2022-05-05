@@ -60,9 +60,31 @@ body > * {
    padding: 3rem;
 }
 
+/* ================================================
+   GENERAL STYLES
+   ------------------------------------------------ */
+
 img {
    /* https://stackoverflow.com/questions/7774814 */
    display: block;
+}
+
+main img {
+   /* image expand to full width of its container */
+   width: 100%;
+
+   /* adds spacing above and below + centers image */
+   margin: 2em auto;
+}
+
+nav ul li, footer > * {
+   /* set spacing between links */
+   margin: 1em;
+}
+
+/* gives underline to active nav link */
+nav ul li.active {
+   border-bottom: 2px solid #F8F2F0;
 }
 
 /* ================================================
