@@ -1,6 +1,6 @@
 /* 
    ========================
-   Last Updated: 2022-04-29
+   Last Updated: 2022-05-06
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -61,7 +61,7 @@ aside:first-of-type {
    text-align: center;
    
    /* ribbon shape */
-   padding-bottom: 4em;
+   padding-bottom: 5em;
    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
 }
 
@@ -154,7 +154,7 @@ h1, h2, h3 {
    }
 }
 
-/* hides note, move bookmark to top */
+/* moves bookmark to top, and note to bottom */
 @media (max-width: 480px) {
    article {
       margin-left: 0;
@@ -169,6 +169,11 @@ h1, h2, h3 {
    }
    
    aside:last-of-type {
-      display: none;
+      position: relative;
+      width: 100%;
+      left: 0;
+      right: 0;
+      transform: translateY(0);
+      border-radius: 0;
    }
 }

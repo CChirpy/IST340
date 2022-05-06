@@ -143,6 +143,8 @@ nav a {
 main {
    background-color: #FFBA08;
    color: #2A282C;
+   
+   overflow-x: hidden;
 }
 
 main a {

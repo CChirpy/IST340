@@ -3,13 +3,17 @@ Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
 ### To-do:
 - change:
-   - add back to top button for changelog
-   - move note in constitution to left side on smaller screens
-   - change header for blog and form to match index
-   - clean up mindtap assignments
+   - changelog: 
+      - add back to top button
+   - check footer links
 - recipe page
 - form page
 - resources
+
+### 2022-05-06, recipe page
+- UPDATED:
+   - `constitution.css`: bottom note for smaller screens
+   - `changelog.html`: moved aside above main
 
 ### 2022-05-05, updated header layout
 - ADDED:
