@@ -1,0 +1,85 @@
+/* 
+   ========================
+    ! UNDER CONSTRUCTION !
+   Last Updated: 2022-05-06
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: recipe.css
+   Date Created: 2022-05-06
+   Purpose: Styles specific for the Lists, Images, & Positioning assignment.
+*/
+
+/* ================================================
+   IMAGE & CAPTION STYLES
+   ------------------------------------------------ */
+
+/* image */
+main img {
+   margin: 0;
+}
+
+/* caption */
+main figcaption {
+   /* background and text colors */
+   background-color: #6969FF;
+   color: #F8F2F0;
+   padding: 0.5em;
+
+   /* text styles */
+   text-align: center;
+   font-weight: bold;
+}
+
+/* figure floats to the right of text */
+.figure {
+   /* positioning */
+   width: 40%;
+   float: right;
+   margin: 2em;
+   
+   /* box shadow */
+   box-shadow: 5px 5px 0 #033F65;
+}
+
+/* ================================================
+   MEDIA QUERIES
+   ------------------------------------------------ */
+
+/* Grid layout copied from media query in layout2.css */
+@media (min-width: 750px) {
+
+   /* grid */
+   body {
+      display: grid;
+
+      /* edited for wider aside */
+      grid-template-columns: 20em auto;
+   }
+
+   header {
+      grid-area: 1 / 1 / 2 / 4;
+   }
+
+   main {
+      grid-area: 2 / 2 / 3 / 4;
+   }
+
+   aside {
+      grid-area: 2 / 1 / 3 / 2;
+   }
+
+   footer {
+      grid-area: 3 / 1 / 4 / 4;
+   }
+}
+
+/* larger image for smaller screens */
+@media (max-width: 1000px) {
+   .figure {
+      float: none;
+      margin: 0 auto 0;
+      width: 90%;
+   }
+}

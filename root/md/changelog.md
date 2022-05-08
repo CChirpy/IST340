@@ -14,6 +14,8 @@ Live website: https://owd.tcnj.edu/~huangc8/ist340/
 - UPDATED:
    - `constitution.css`: bottom note for smaller screens
    - `changelog.html`: moved aside above main
+- ADDED: 
+   - code to `recipe.html` and `recipe.css`
 
 ### 2022-05-05, updated header layout
 - ADDED:

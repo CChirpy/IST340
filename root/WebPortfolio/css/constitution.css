@@ -12,10 +12,8 @@
 
 /* ================================================
    HEADER STYLES
+   Moved to portfolio.css
    ------------------------------------------------ */
-
-/* Moved to portfolio.css */
-/* header {} */
 
 /* ================================================
    ASIDE STYLES
@@ -115,14 +113,14 @@ article {
 
 /* ================================================
    FOOTER STYLES
+   Moved to portfolio.css
    ------------------------------------------------ */
-
-/* Moved to portfolio.css */
-/* footer {} */
 
 /* ================================================
    TYPOGRAPHY STYLES
+   ul, li, and p provided in base.css
    ------------------------------------------------ */
+
 blockquote {
    margin: 0;
    padding-left: 2em;
@@ -132,11 +130,6 @@ blockquote {
 h1, h2, h3 {
    line-height: 1.5em;
 }
-
-/* Provided in base.css */
-/* ul {}
-   li {} 
-   p {} */
 
 /* ================================================
    MEDIA QUERIES
