@@ -5,7 +5,10 @@ Live website: https://owd.tcnj.edu/~huangc8/ist340/
 - change:
    - changelog: 
       - add back to top button
-   - check footer links
+   - images:
+      - add blog image styling to base styles
+      - add image carousel to homepage 
+   - add resources page
 - recipe page
 - form page
 - resources
