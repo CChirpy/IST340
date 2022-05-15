@@ -6,12 +6,20 @@ Live website: https://owd.tcnj.edu/~huangc8/ist340/
    - changelog: 
       - add back to top button
    - images:
-      - add blog image styling to base styles
       - add image carousel to homepage 
    - add resources page
+   - update page titles
 - recipe page
 - form page
 - resources
+
+### 2022-05-15, form page + final touchups
+- ADDED:
+   - `resources.html`
+   - `favicon.ico`, website tab icon
+- UPDATED:
+   - `base.css`, `recipe.css` - moved the image css made for the recipe page to be the main image styles for the website
+   - image link in some validation icons
 
 ### 2022-05-06, recipe page
 - UPDATED:

@@ -1,11 +1,11 @@
 /* 
    ========================
-   Last Updated: 2022-05-03
+   Last Updated: 2022-05-15
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
    Version: HTML5, CSS3
-   File: styles.css
+   File: base.css
    Date Created: 2022-04-12
    Purpose: Main stylesheet for website.
 */
@@ -61,7 +61,7 @@ body > * {
 }
 
 /* ================================================
-   GENERAL STYLES
+   IMAGE STYLES
    ------------------------------------------------ */
 
 img {
@@ -74,8 +74,32 @@ main img {
    width: 100%;
 
    /* adds spacing above and below + centers image */
-   margin: 2em auto;
+   margin: 0 auto;
 }
+
+/* image + caption */
+figure {
+   margin: 1.5em 1em 2em;
+   
+   /* box shadow */
+   box-shadow: 5px 5px 0 #033F65;
+}
+	
+/* caption */
+main figcaption {
+   /* background and text colors */
+   background-color: #6969FF;
+   color: #F8F2F0;
+   padding: 0.5em 0.2em 0.3em;
+
+   /* text styles */
+   text-align: center;
+   font-weight: bold;
+}
+
+/* ================================================
+   NAV STYLES
+   ------------------------------------------------ */
 
 nav ul li, footer > * {
    /* set spacing between links */

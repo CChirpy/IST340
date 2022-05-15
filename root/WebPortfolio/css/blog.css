@@ -1,13 +1,13 @@
 /* 
    ========================
-   Last Updated: 2022-05-03
+   Last Updated: 2022-05-15
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
    Version: HTML5, CSS3
-   File: constitution.css
-   Date Created: 2022-04-19
-   Purpose: Styles specific for The Constitution assignment.
+   File: blog.css
+   Date Created: 2022-04-29
+   Purpose: Styles specific for Blog assignment.
 */
 
 /* ================================================
@@ -20,7 +20,7 @@ main h1 {
    margin-bottom: 1em;
 }
 
-main h2 {
+main article h2 {
    margin-top: 1.2em;
 }
 

@@ -150,7 +150,7 @@ h1, h2, h3 {
 /* moves bookmark to top, and note to bottom */
 @media (max-width: 480px) {
    article {
-      margin-left: 0;
+      margin: 0;
    }
    
    aside:first-of-type {
