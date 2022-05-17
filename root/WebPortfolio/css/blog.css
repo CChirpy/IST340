@@ -11,20 +11,6 @@
 */
 
 /* ================================================
-   MAIN STYLES
-   ------------------------------------------------ */
-
-main h1 {
-   border-bottom: solid 2px #2A282C;
-   padding-bottom: 0.5em;
-   margin-bottom: 1em;
-}
-
-main article h2 {
-   margin-top: 1.2em;
-}
-
-/* ================================================
    GRID GALLERY
    ------------------------------------------------
    https://css-tricks.com/snippets/css/complete-guide-grid/

@@ -1,0 +1,105 @@
+/* 
+   ========================
+   Last Updated: 2022-05-16
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: portfolio.css
+   Date Created: 2022-05-16
+   Purpose: Form assignment styles.
+*/
+
+/* ================================================
+   FORM STYLES
+   ------------------------------------------------ */
+
+form {
+   /* grid */
+   display: grid;
+
+   /* centers */
+   margin: 0 auto;
+}
+
+input,
+textarea,
+select {
+   /* input boxes take full width of container */
+   width: 100%;
+   padding: .5em;
+
+   border: 1px solid #2A282C;
+}
+
+select:invalid {
+   /* placeholder feedback type */
+   color: gray;
+}
+
+input[type=checkbox],
+input[type=radio] {
+   /* displays labels side by side with buttons */
+   width: auto;
+   margin: 0;
+}
+
+/* ================================================
+   SUBMIT BUTTON
+   ------------------------------------------------ */
+
+input[type=submit] {
+   padding: .5em;
+   border-radius: .5em;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: #2A282C;
+   color: #F8F2F0;
+}
+
+/* ================================================
+   TYPOGRAPHY
+   ------------------------------------------------ */
+
+label,
+small {
+   font-size: small;
+}
+
+form > * {
+   padding: 0.5em;
+   margin: 0;
+
+   /* uncomment to visualize container */
+   /* border: 1px solid #2A282C; */
+}
+
+/* ================================================
+   MEDIA QUERIES, GRID
+   ------------------------------------------------ */
+
+@media (max-width: 615px) {
+   form {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   form > * {
+      grid-column: auto / span 1;
+   }
+}
+
+@media (min-width: 616px) {
+   form {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   h3,
+   form > small,
+   form > input,
+   div:nth-of-type(5) {
+      grid-column: 1 / 3;
+   }
+}

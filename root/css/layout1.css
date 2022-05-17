@@ -1,6 +1,6 @@
 /* 
    ========================
-   Last Updated: 2022-05-05
+   Last Updated: 2022-05-16
    ========================
    Author: Connie Huang
    Contact: huangc8@tcnj.edu
@@ -74,6 +74,14 @@ footer {
    }
 
    footer p:first-child {
+      display: none;
+   }
+   
+   figure {
+      margin: 0 auto 2em;
+   }
+   
+   figcaption {
       display: none;
    }
 }

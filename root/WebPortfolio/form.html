@@ -2,7 +2,7 @@
 <!-- 
 	========================
 	 ! UNDER CONSTRUCTION ! 
-	Last Updated: 2022-04-29
+	Last Updated: 2022-05-16
 	========================
 	Author: Connie Huang
 	Contact: huangc8@tcnj.edu
@@ -19,7 +19,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-	
+
 	<!-- TITLE, DESCRIPTION -->
 	<title>IST 340 | TCNJ | Connie Huang</title>
 	<meta name="description" content="This website is dedicated to the course IST 340.">
@@ -40,6 +40,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/layout1.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 
 <body>
@@ -48,8 +49,8 @@
 		<nav>
 			<ul>
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="">Resources</a></li>
 				<li><a href="../changelog.html">Changelog</a></li>
+				<li><a href="../resources.html">Resources</a></li>
 				<li><a href="blog.html">Blog</a></li>
 				<li class="active"><a href="form.html">Feedback</a></li>
 			</ul>
@@ -60,7 +61,119 @@
 	<main>
 		<!--	PAGE MAIN HEADER -->
 		<h1>Feedback Form</h1>
-		
+
+		<!--	FORM -->
+		<form action="email.php" method="post" name="form">
+			<!--	HEADER 1 -->
+			<h3>Basic Information</h3>
+
+			<!--	FIRST NAME -->
+			<div>
+				<label for="first">First Name *</label>
+				<input id="first" name="first_name" type="text" maxlength="50" size="30" required placeholder="First Name">
+			</div>
+
+			<!--	LAST NAME -->
+			<div>
+				<label for="last">First Name *</label>
+				<input id="last" name="last_name" type="text" maxlength="50" size="30" required placeholder="Last Name">
+			</div>
+
+			<!--	EMAIL -->
+			<div>
+				<label for="emailadr">Email *</label>
+				<input id="emailadr" name="email" type="email" maxlength="80" size="30" required placeholder="you@example.com">
+			</div>
+
+			<!--	DROPDOWN BOX, FEEDBACK TYPE
+				https://stackoverflow.com/questions/5805059/ -->
+			<div>
+				<label for="type">Feedback Type *</label>
+				<select id="type" name="feedback_type" size="1" required>
+					<option value="" disabled selected>Select</option>
+					<option value="General">General</option>
+					<option value="Suggestion">Suggestion</option>
+					<option value="Compliment">Compliment</option>
+					<option value="Issue">Issue</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+
+			<!--	TEXT BOX -->
+			<div>
+				<label for="msg">Message</label>
+				<textarea id="msg" name="comments" maxlength="1000" cols="25" rows="6" placeholder="Tell me more..."></textarea>
+			</div>
+
+			<!--	FILE UPLOAD
+				https://www.w3schools.com/howto/howto_html_file_upload_button.asp -->
+			<!-- <div>
+					<label for="file">If there is a bug or glitch in anywhere in the website, upload a screenshot!</label>
+					<input id="file" name="attachment" type="file">
+				</div> -->
+
+			<!--	HEADER 2 -->
+			<h3>Quick Survey</h3>
+
+			<!--	RADIO BUTTONS, SURVEY -->
+			<div>
+				<small><b>Please rate the content of the website:</b></small><br>
+
+				<small>Layout and design</small><br>
+				<input id="rating_design_1" name="rating_design" type="radio" value="Good">
+				<label for="rating_design_1">Good</label>
+				<input id="rating_design_2" name="rating_design" type="radio" value="Neutral">
+				<label for="rating_design_2">Neutral</label>
+				<input id="rating_design_3" name="rating_design" type="radio" value="Poor">
+				<label for="rating_design_3">Poor</label>
+				<input id="rating_design_4" name="rating_design" type="radio" value="N/A" checked>
+				<label for="rating_design_4">N/A</label>
+				<br>
+
+				<small>Ease of navigation</small><br>
+				<input id="rating_navigation_1" name="rating_navigation" type="radio" value="Good">
+				<label for="rating_navigation_1">Good</label>
+				<input id="rating_navigation_2" name="rating_navigation" type="radio" value="Neutral">
+				<label for="rating_navigation_2">Neutral</label>
+				<input id="rating_navigation_3" name="rating_navigation" type="radio" value="Poor">
+				<label for="rating_navigation_3">Poor</label>
+				<input id="rating_navigation_4" name="rating_navigation" type="radio" value="N/A" checked>
+				<label for="rating_navigation_4">N/A</label>
+				<br>
+
+				<small>Usefulness of content</small><br>
+				<input id="rating_usefulness_1" name="rating_usefulness" type="radio" value="Good">
+				<label for="rating_usefulness_1">Good</label>
+				<input id="rating_usefulness_2" name="rating_usefulness" type="radio" value="Neutral">
+				<label for="rating_usefulness_2">Neutral</label>
+				<input id="rating_usefulness_3" name="rating_usefulness" type="radio" value="Poor">
+				<label for="rating_usefulness_3">Poor</label>
+				<input id="rating_usefulness_4" name="rating_usefulness" type="radio" value="N/A" checked>
+				<label for="rating_usefulness_4">N/A</label>
+			</div>
+
+			<!-- CHECKBOX -->
+			<div>
+				<small><b>How did you find this website?</b></small><br>
+				<input id="discovery_method_1" name="discovery_method_1" type="checkbox" value="Checked">
+				<label for="discovery_method_1">IST 340 Student Links</label><br>
+
+				<input id="discovery_method_2" name="discovery_method_2" type="checkbox" value="Checked">
+				<label for="discovery_method_2">Shoutouts</label><br>
+
+				<input id="discovery_method_3" name="discovery_method_3" type="checkbox" value="Checked">
+				<label for="discovery_method_3">Peer</label><br>
+
+				<input id="discovery_method_4" name="discovery_method_4" type="checkbox" value="Checked">
+				<label for="discovery_method_4">Other</label>
+			</div>
+
+			<!--	EXTRA MESSAGE -->
+			<small>* Required</small>
+
+			<!--	SUBMIT BUTTON -->
+			<input type="submit" value="Send">
+		</form>
 	</main>
 
 	<!-- FOOTER -->
@@ -78,4 +191,6 @@
 		<!-- CSS VALIDATOR -->
 		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2FWebPortfolio%2Fform.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!" height="30"></a>
 	</footer>
-</body></html>
+</body>
+
+</html>

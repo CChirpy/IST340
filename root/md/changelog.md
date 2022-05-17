@@ -1,27 +1,24 @@
 # changelog
 Live website: https://owd.tcnj.edu/~huangc8/ist340/
 
-### To-do:
-- change:
-   - changelog: 
-      - add back to top button
-   - images:
-      - add image carousel to homepage 
-   - add resources page
-   - update page titles
-- recipe page
-- form page
-- resources
-
-### 2022-05-15, form page + final touchups
+### 2022-05-15 to 05-16, form page + final touchups
 - ADDED:
    - `resources.html`
-   - `favicon.ico`, website tab icon
+   - `slides.css`, image carousel
+      - added slides to `index.html`
+   - `form.css`
+      - form styles
+      - grid
+   - `email.php`, emailing form responses to myself
+      - modified from https://codepen.io/badcat/pen/yLYVmqo
+      - [screenshot of test email](https://owd.tcnj.edu/~huangc8/ist340/img/screenshot1.png)
 - UPDATED:
    - `base.css`, `recipe.css` - moved the image css made for the recipe page to be the main image styles for the website
    - image link in some validation icons
+- REMOVED:
+   - custom heading styles in blog
 
-### 2022-05-06, recipe page
+### 2022-05-06, redid recipe page
 - UPDATED:
    - `constitution.css`: bottom note for smaller screens
    - `changelog.html`: moved aside above main

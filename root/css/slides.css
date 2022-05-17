@@ -1,0 +1,53 @@
+/* 
+   ========================
+   Last Updated: 2022-05-16
+   ========================
+   Author: Connie Huang
+   Contact: huangc8@tcnj.edu
+   Version: HTML5, CSS3
+   File: layout2.css
+   Date Created: 2022-05-16
+   Purpose: Image carousel for homepage.
+*/
+
+/* ================================================
+   IMAGE CAROUSEL
+   ------------------------------------------------
+   https://css-tricks.com/practical-css-scroll-snapping/
+   ------------------------------------------------ */
+
+.slides {
+   /* hides offscreen photos */
+   display: flex;
+   
+   /*  allows scroll */
+   overflow-x: auto;
+   
+   /* scroll snapping */
+   scroll-snap-type: x mandatory;
+   -webkit-overflow-scrolling: touch;
+}
+
+.slides img {   
+   /* scroll snapping */
+   scroll-snap-align: start;
+}
+
+/* ================================================
+   HORIZONTAL SCROLLBAR
+   ------------------------------------------------
+   https://css-tricks.com/custom-scrollbars-in-webkit/
+   ------------------------------------------------ */
+
+.slides::-webkit-scrollbar {
+   height: 6px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+   background: #2A282C;
+   border-radius: 6px;
+}
+
+.slides::-webkit-scrollbar-track {
+   background: #F8F2F0;
+}
