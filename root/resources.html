@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <!-- 
 	========================
-	 ! UNDER CONSTRUCTION !
-	Last Updated: 2022-05-15
+	Last Updated: 2022-05-16
 	========================
 	Author: Connie Huang
 	Contact: huangc8@tcnj.edu
@@ -18,7 +17,6 @@
 	<!-- CHARSET, VIEWPORT, FAVICON -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
 	<!-- TITLE, DESCRIPTION -->
 	<title>IST 340 | TCNJ | Connie Huang</title>
@@ -40,6 +38,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/layout1.css">
+	<link rel="stylesheet" type="text/css" href="css/layout2.css">
 </head>
 
 <body>
@@ -55,14 +54,86 @@
 			</ul>
 		</nav>
 	</header>
+	
+	<!-- SIDENAV 
+		Contains links to page locations. -->
+	<aside>
+		<div>
+			<h3>Jump to section:</h3>
+			<!-- JUMP LINKS -->
+			<ul>
+				<li><a href="#resources">Resources</a></li>
+				<li><a href="#text-editor">Text Editor</a></li>
+				<li><a href="#brackets-plugins">Brackets Plugins</a></li>
+				<li><a href="#online-tools">Online Tools</a></li>
+				<li><a href="#html-references">HTML References</a></li>
+				<li><a href="#css-references">CSS References</a></li>
+				<li><a href="#validation-resources">Validation Resources</a></li>
+				<li><a href="#scripts">Scripts</a></li>
+				<li><a href="#questions">Questions</a></li>
+			</ul>
+		</div>
+	</aside>
 
-	<!--	MAIN CONTENT -->
+	<!--	MAIN
+		https://markdowntohtml.com -->
 	<main>
-		<!-- MAIN HEADING -->
-		<h1>Resources</h1>
-	
+		<h1 id="resources">Resources</h1>
+		<p>A collection of saved links.</p>
+		<h3 id="text-editor">Text Editor</h3>
+		<ul>
+			<li><a href="https://brackets.io">Brackets</a></li>
+		</ul>
+		<h3 id="brackets-plugins">Brackets Plugins</h3>
+		<ul>
+			<li><a href="https://github.com/rainje/Monokai-Dark-Soda">Monokai Dark Soda (Theme)</a></li>
+			<li><a href="https://github.com/brackets-beautify/brackets-beautify">Beautify</a></li>
+			<li><a href="https://github.com/Taraflex/Brackets-Color-Highlighter">Color Highlighter</a></li>
+			<li><a href="https://github.com/le717/brackets-html-skeleton">HTML Skeleton</a></li>
+			<li><a href="https://github.com/gruehle/MarkdownPreview">Markdown Preview</a></li>
+		</ul>
+		<h3 id="online-tools">Online Tools</h3>
+		<ul>
+			<li><a href="https://coolors.co/">Coolors: Color Palette Generator</a></li>
+			<li><a href="https://loremipsum.io/generator">Lorem Ipsum</a></li>
+			<li><a href="https://dummyimage.com">Dynamic Dummy Image Generator</a></li>
+			<li><a href="https://markdowntohtml.com">Markdown to HTML Converter</a></li>
+			<li><a href="https://cssgrid-generator.netlify.app">CSS Grid Generator</a></li>
+			<li><a href="https://bennettfeely.com/clippy/">CSS Clip Path Maker</a></li>
+		</ul>
+		<h3 id="html-references">HTML References</h3>
+		<ul>
+			<li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML5 Semantic Elements</a></li>
+			<li><a href="https://www.toptal.com/designers/htmlarrows/">Reference for HTML &amp; CSS Symbols</a></li>
+		</ul>
+		<h3 id="css-references">CSS References</h3>
+		<ul>
+			<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
+			<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></li>
+			<li><a href="https://css-tricks.com/custom-scrollbars-in-webkit/">Custom Scrollbars in WebKit</a></li>
+			<li><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selectors</a></li>
+			<li><a href="https://www.w3schools.com/cssref/css_default_values.asp">Default CSS Values for HTML Elements</a></li>
+		</ul>
+		<h3 id="validation-resources">Validation Resources</h3>
+		<ul>
+			<li><a href="https://tdarb.org/html5-validator-badge/">HTML Validator Badges</a></li>
+			<li><a href="https://www.w3.org/QA/Tools/Icons">All W3C Validation Icons</a></li>
+			<li><a href="https://validator.w3.org/services">W3C Validation Services</a></li>
+		</ul>
+		<h3 id="scripts">Scripts</h3>
+		<ul>
+			<li><a href="https://css-tricks.com/practical-css-scroll-snapping/">Practical CSS Scroll Snapping</a></li>
+			<li><a href="https://codepen.io/badcat/pen/yLYVmqo">PHP Contact Form Example</a></li>
+			<li><a href="https://perishablepress.com/css-center-align-list-left-align-text/">CSS: Center-Align List with Left-Aligned Text (and Unknown Width)</a></li>
+		</ul>
+		<h3 id="questions">Questions</h3>
+		<ul>
+			<li><a href="https://stackoverflow.com/questions/9003969/underscore-between-two-image-links">Underscore between two image-links</a></li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#sect1">About box-sizing</a></li>
+			<li><a href="https://stackoverflow.com/questions/7774814">Remove white space below image</a></li>
+		</ul>
 	</main>
-	
+
 	<!--	FOOTER -->
 	<footer>
 		<!-- TEXT CONTENT -->
@@ -73,10 +144,10 @@
 		 	https://stackoverflow.com/questions/9003969/underscore-between-two-image-links -->
 
 		<!-- HTML VALIDATOR -->
-		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Findex.html" target="_blank"><img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/68b012b5c19b26f75d9bee2409420c916b2d451a/html5-validator-badge-blue.svg" alt="Valid HTML!" height="30"></a>
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fresources.html" target="_blank"><img src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/68b012b5c19b26f75d9bee2409420c916b2d451a/html5-validator-badge-blue.svg" alt="Valid HTML!" height="30"></a>
 
 		<!-- CSS VALIDATOR -->
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank"><img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!" height="30"></a>
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fowd.tcnj.edu%2F%7Ehuangc8%2Fist340%2Fresources.html&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank"><img src="https://www.w3.org/Icons/valid-css-v.svg" alt="Valid CSS!" height="30"></a>
 	</footer>
 </body>
 
